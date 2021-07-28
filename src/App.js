@@ -1,5 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+
+import clockIcon from './assets/icons/027-clock.png'
+import laptop from './assets/icons/laptopWithNumber.png'
+import group from './assets/icons/groupWithNumber.png'
+import notepad from './assets/icons/notepadWithNumber.png'
+
+// Administrative Inclusions
+import briefcase from './assets/icons/014-briefcase.png'
+import shield from './assets/icons/042-shield.png'
+import folders from './assets/icons/002-folders.png'
+import taxes from './assets/icons/tax.png'
+import factory from './assets/icons/015-factory.png'
+import medal from './assets/icons/024-medal.png'
+import drugs from './assets/icons/drugs.png'
+import traffic from './assets/icons/traffic.png'
+
+
 
 function App() {
   return (
@@ -49,84 +65,132 @@ function App() {
 
 
       <div className='theProblem'>
-        <div className='leftSide'>
-          <img src='' alt='clockIcon'/>
+        <div className='problemLeftSide'>
+          <img src={`${clockIcon}`} alt='clock Icon' className='clockIcon'/>
+          <h1 className='problemLeftHeader'>Hiring Burns Time and Effort</h1>
+          <p className='problemText'>Posting ads, screening resumes and applicants, setting up
+            calls and meetings, all these things take your time and 
+            costs you valuable hours each day.
+          </p>
+          <button className='problemButton'>Start Saving Time</button>
         </div>
-        <h1></h1>
-        <p></p>
-        <button>Call to Action</button>
         
-        <div className='rightSide'>
+        <div className='problemRightSide'>
           <section>
-            <h2></h2>
-            <p></p>
+            <h2 className='problemHeader'>Where do you find qualified people ready to work?</h2>
+            <p className='problemText'>Hiring managers spend hours finding the right places
+              to post ads to find candidates. Our team gives you 
+              those hours back.
+            </p>
           </section>
 
           <section>
-            <h2></h2>
-            <p></p>
+            <h2 className='problemHeader'>Hundreds of applications or resumes clog your inbox.</h2>
+            <p className='problemText'>The volume of applicants can be too few or too many. 
+              We screen for you, ensuring your inbox is only filled 
+              with candidates you actually want to talk to.
+            </p>
           </section>
 
           <section>
-            <h2></h2>
-            <p></p>
+            <h2 className='problemHeader'>A Hiring Manager should focus on Hiring</h2>
+            <p className='problemText'>Our staff handles the busy work, letting you focus 
+              on what you're best at: Hiring the right people for 
+              your organization.
+            </p>
           </section>
         </div>
 
       </div>
 
       <div className='howItWorks'>
-        <h1></h1>
-        <div>
-          <section>
-            <img src='' alt='CandidatesApply.jpg'/>
+        <p className='worksHeader'>How it Works</p>
+        <div className='worksIcons'>
+          <section className='workIcon'>
+            <section className='workIconTop'>
+              <img src={`${laptop}`} alt='laptop'/>
+            </section>
+            <p className='iconText'>Candidates Apply</p>
           </section>
           
-          <section>
-            <img src='' alt='WeSourceStaff.jpg'/>
-          </section>
-          
-          <section>
-            <img src='' alt='YouInterviewAndHire.jpg'/>
-          </section>
-        </div>
+          <section className='workIcon'>
+            <section className='workIconTop'>
+                <img src={`${group}`} alt='group'/>
+              </section>
 
-        <p></p>
-        <p></p>
+              <p className='iconText'>We Source Staff</p>
+            </section>
+          
+          <section className='workIcon'>
+            <section className='workIconTop'>
+                <img src={`${notepad}`} alt='notepad' className='iconIcon'/>
+              </section>
+              <p className='iconText'>You Interview &amp; Hire</p>
+          </section>
+        
+        </div>
+        <br></br>
+        <br></br>
+        <p className='worksText'>
+          We offer staffing services for executives, remote workers, remote office professionals, temporary, temp to hire, contract to hire, long-term project-based employment and direct hire, permanent placement opportunities to all areas surrounding Texas, through out USA. 
+        <br></br>
+        <br></br>
+          Our rigorous screening process delivers quality candidates perfectly suited to meet your needs.  Additionally, our Administrative Backoffice includes:
+        </p>
+        <br></br>
+        <br></br>
 
         <div className='adminInclusions'>
-            <section>
-            
-              <img src='' alt='briefcase.jpg'/>
-              <h3>Unemployment Issues</h3>
-                        
-              <img src='' alt='shield.jpg'/>
-              <h3>Liability Concerns</h3>
-                        
-              <img src='' alt='folder.jpg'/>
-              <h3>I-9 Compliance</h3>
-                        
-              <img src='' alt='document.jpg'/>
-              <h3>Employment Taxes</h3>
-            
-            </section>
-            <section>
-            
-              <img src='' alt='factory.jpg'/>
-              <h3>Workers Compensation Insurance</h3>
-            
-              <img src='' alt='medal.jpg'/>
-              <h3>Benefits</h3>
-           
-              <img src='' alt='pill.jpg'/>
-              <h3>Drug Screening</h3>
-            
-              <img src='' alt='reverseArrows.jpg'/>
-              <h3>Direct Deposit</h3>
-            
+            <section className='inclusionsTop'>
+              <section className='inclusion'>
+                <img src={`${briefcase}`} alt='briefcase.jpg' className='inclusionIcon'/>
+                <p className='inclusionText'>Unemployment Issues</p>
+              </section>
+
+              <section className='inclusion'>
+                <img src={`${shield}`} alt='shield.jpg' className='inclusionIcon'/>
+                <p className='inclusionText'>Liability Concerns</p>
+              </section>
+
+              <section className='inclusion'>
+                <img src={`${folders}`} alt='folder.jpg' className='inclusionIcon'/>
+                <p className='inclusionText'>I-9 Compliance</p>
+                </section>
+
+              <section className='inclusion'>
+                <img src={`${taxes}`} alt='document.jpg' className='inclusionIcon'/>
+                <p className='inclusionText'>Employment Taxes</p>
+              </section>
             </section>
 
-            <button>Call to Action</button>
+            <br></br>
+            <br></br>
+            
+            <section className='inclusionsTop'>
+              <section className='inclusion'>
+                <img src={`${factory}`} alt='factory.jpg' className='inclusionIcon'/>
+                <p className='inclusionText'>Workers Compensation Insurance</p>
+              </section>
+
+              <section className='inclusion'>
+                <img src={`${medal}`} alt='medal.jpg' className='inclusionIcon'/>
+                <p className='inclusionText'>Benefits</p>
+              </section>
+
+              <section className='inclusion'>
+                <img src={`${drugs}`} alt='pill.jpg' className='inclusionIcon'/>
+                <p className='inclusionText'>Drug Screening</p>
+              </section>
+              
+              <section className='inclusion'>
+                <img src={`${traffic}`} alt='reverseArrows.jpg' className='inclusionIcon'/>
+                <p className='inclusionText'>Direct Deposit</p>
+              </section>
+
+             </section>
+            <br></br>
+            <br></br>
+            <button className='inclusionsButton'>Request Information</button>
         </div>
       </div>
 

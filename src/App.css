@@ -116,6 +116,7 @@
   margin-left: 10%;
   justify-content: space-between;
   justify-self: center;
+  margin-bottom: 5%;
   /* background-color: green; */
 }
 
@@ -141,4 +142,160 @@
   font-size: 20px;
   width:90%;
   align-self: center;
+}
+
+.theProblem{
+  display:flex;
+  justify-content: space-evenly;
+  height:67.5vh;
+  text-align: left;
+}
+
+.problemText{
+  font-size: 20px;
+}
+
+.problemLeftSide{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:35%;
+}
+
+.clockIcon{
+  height:35%;
+  width:35%;
+}
+
+.problemButton{
+  width:35%;
+  height:5vh;
+  font-size: 22.5px;
+  font-weight: bold;
+  background-color: rgba(126, 209, 45);
+  color:white;
+  border-radius: 8px;
+}
+
+.problemRightSide{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width:35%;
+}
+
+.problemLeftHeader{
+  font-size: 50px;
+  color:rgba(255, 132, 39)
+}
+
+.problemHeader{
+  color:rgba(255, 132, 39);
+  font-size: 40px;
+}
+
+.howItWorks{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 110vh;
+  width:100%;
+  background-color: rgba(255, 159, 43) 
+  ;
+}
+
+.worksHeader{
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: -0%;
+}
+
+.worksIcons{
+  display:flex;
+  justify-content: space-between;
+  align-self: center;
+  width:65%;
+
+}
+
+.workIcon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:25%;
+}
+
+.iconIcon{
+  display: flex;
+  align-content: center;
+}
+
+.workIconTop{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: -25%;
+}
+
+.iconText{
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.worksText{
+  width:40%;
+  font-size: 20px;
+  color:white;
+  align-self: center;
+}
+
+
+
+
+.adminInclusions{
+  display:flex;
+  flex-direction: column;
+  /* justify-content:space-around; */
+  align-content: center;
+  align-items: center;
+  /* background-color: pink; */
+  width:50%;
+  margin-left: 25%;
+  margin-bottom: 7.5%;
+}
+
+.inclusionsTop{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  /* background-color:royalblue; */
+}
+
+.inclusion{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:20%;
+}
+
+.inclusionIcon{
+  height:100px;
+}
+
+.inclusionText{
+  font-size: 18px;
+  color:white;
+}
+
+.inclusionsButton{
+  width:30%;
+  height:5vh;
+  font-size: 22.5px;
+  font-weight: bold;
+  background-color: rgba(126, 209, 45);
+  color:white;
+  border-radius: 8px;
 }
