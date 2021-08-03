@@ -414,13 +414,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width:100%;
   padding-top: 5vw;
   padding-bottom: 5vw;
-  /* padding-left: 5vw; */
-  padding-right: 5vw;
 
 }
 
@@ -429,6 +427,7 @@
   flex-direction: column;
   width:25%;
   padding-top: 5vw;
+  margin-left: -5vw;
   justify-content: space-around;
   /* background-color: royalblue; */
 }
@@ -451,8 +450,8 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width:27.5%;
-  background-color: royalblue;
+  width:22.5%;
+  background-color: white;
 }
 
 .contactRightTop{
