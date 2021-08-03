@@ -1,5 +1,13 @@
 import './App.css';
+import { useState, useEffect } from 'react';
 
+// Logos
+import qualifiedCandidates from './assets/logos/qualified-candidates-1.png'
+import facebook from './assets/logos/facebook.png'
+import twitter from './assets/logos/twitter.png'
+import instagram from './assets/logos/instagram.png'
+
+// How it Works
 import clockIcon from './assets/icons/027-clock.png'
 import laptop from './assets/icons/laptopWithNumber.png'
 import group from './assets/icons/groupWithNumber.png'
@@ -15,32 +23,94 @@ import medal from './assets/icons/024-medal.png'
 import drugs from './assets/icons/drugs.png'
 import traffic from './assets/icons/traffic.png'
 
+//Imagine Section
+import computer from './assets/icons/024-monitor.png'
+
+//Worth Your While Section
+import settings from './assets/icons/033-settings.png'
+import group2 from './assets/icons/Group_2_.png'
+import clock2 from './assets/icons/asset-1.png'
+
+//Contact Form
+import emailIcon from './assets/icons/036-email.png'
+
+
+// Smooth Scroll Functionality 
+function smoothScroll(target, duration){
+  var target = document.querySelector(target);
+  var targetPosition = target.getBoundingClientRect().top + window.scrollY;
+  let startPosition = window.pageYOffset;
+  let distance = targetPosition - startPosition;
+  let startTime = null;
+  
+  function animation(currentTime){
+    if(startTime === null) startTime = currentTime;
+    let timeElapsed = currentTime - startTime;
+    let run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if(timeElapsed < duration) requestAnimationFrame(animation)
+  }
+
+  function ease(t, b, c, d){
+    t /= d /2;
+    if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t -2) -1) + b;
+  }
+
+  requestAnimationFrame(animation)
+}
+
+let mButton = document.getElementsByClassName('menuButton')
+
+// const clicker = () =>{
+//   console.log(mButton)
+// } 
+
+// mButton.addEventListener('click',function(){
+//   smoothScroll('.contactForm', 1000)
+// })
 
 
 function App() {
+  const [name, setName] = useState('')
+  const [emailAddress, setEmailAddress] = useState('')
+  const [messageSubmission, setMessageSubmission] = useState('')
+  
+
   return (
     <div className="App">
+
+{/* Header Section */}
+
       <div className='header'>
         <section className='headerLogo'>
-          <h1 className='logo1'>QUALIFIED</h1>
-          <h1 className='logo2'>CANDIDATES</h1>
+        <img src={`${qualifiedCandidates}`} alt='qualifiedCandidatesLogo'/>
         </section>
         <section className='headerMenu'>
-          <p className='menuItem1'>The Problem</p>
-          <p className='menuItem2'>How It Works</p>
-          <p className='menuItem3'>Free Download</p>
-          <button className='menuButton'>Contact Us</button>
+          <p className='menuItem1' onClick={() => smoothScroll('.theProblem', 1000)}>The Problem</p>
+          <p className='menuItem2' onClick={() => smoothScroll('.howItWorks', 1000)}>How It Works</p>
+          {/* <p className='menuItem3'>Free Download</p> */}
+          <button className='menuButton' 
+          onClick={() => smoothScroll('.contactForm', 1000)}
+          // onClick={() => clicker()} 
+          >Contact Us</button>
         </section>
       </div>
+
+
+{/* Hero Section */}
 
       <div className='heroDiv'>
         <div>
           <p className='heroSection1'>We provide you with The Qualified Candidates for a wide range of positions.</p>
           <p className='heroSection2'>Ease your recruiting efforts today.</p>
         </div>
-        <button className='actionButton'>Learn More</button>
+        <button className='actionButton' onClick={() => smoothScroll('.contactForm', 1000)}>Learn More</button>
       </div>
-    
+
+
+{/* Tombstone Section */}
 
       <div className='tombstones'>
         <section className='stone'>
@@ -64,7 +134,9 @@ function App() {
       </div>
 
 
-      <div className='theProblem'>
+{/* "The Problem" Section */}
+
+      <div className='theProblem' id='theProblem'>
         <div className='problemLeftSide'>
           <img src={`${clockIcon}`} alt='clock Icon' className='clockIcon'/>
           <h1 className='problemLeftHeader'>Hiring Burns Time and Effort</h1>
@@ -72,7 +144,8 @@ function App() {
             calls and meetings, all these things take your time and 
             costs you valuable hours each day.
           </p>
-          <button className='problemButton'>Start Saving Time</button>
+          <br></br>
+          <button className='problemButton' onClick={() => smoothScroll('.contactForm', 1000)}>Start Saving Time</button>
         </div>
         
         <div className='problemRightSide'>
@@ -100,8 +173,10 @@ function App() {
             </p>
           </section>
         </div>
-
       </div>
+
+
+{/* How it Works Section */}
 
       <div className='howItWorks'>
         <p className='worksHeader'>How it Works</p>
@@ -190,33 +265,60 @@ function App() {
              </section>
             <br></br>
             <br></br>
-            <button className='inclusionsButton'>Request Information</button>
+            <button className='inclusionsButton' onClick={() => smoothScroll('.contactForm', 1000)}>Request Information</button>
         </div>
       </div>
+
+{/* Imagine Section */}
 
       <div className='imagine'>
-        <img src='' alt='computerScreen'/>
-        <h2></h2>
+        <section className='imagineContent'>
+          <img src={`${computer}`} alt='computerScreen'/>
+          <p className='imagineText'>Imagine spending your time talking to pre-screened, qualified candidates that are perfect for the positions you need filled.</p>
+        </section>
       </div>
+
+{/* Make it Worth Your While Section */}
 
       <div className='worthYourWhile'>
-        <h1>Make it Worth Your While</h1>
-        <div>
-          <section>
-            <img src='' alt='clock'/>
-            <h2></h2>
-            
-            <img src='' alt='people'/>
-            <h2></h2>
-            
-            <img src='' alt='gear'/>
-            <h2></h2>
+        <p className='worthHeader'>Make it Worth Your While</p>
+        <div className='worthTombstones'>
+          <section className='worthTomb'>
+            <section>
+              <img src={`${clock2}`} alt='clock'/>
+            </section>
+            <p className='worthText'>Save Time &amp; Money</p>
           </section>
-          <button>Call to Action</button>
+          
+          <section className='worthTomb'>
+            <section>
+              <img src={`${group2}`} alt='people'/>
+            </section>
+            <p className='worthText'>
+              Large resouce of diversity
+              <br></br>
+              qualififed candidates ready to work
+            </p>
+          </section>
+
+          <section className='worthTomb'>
+            <section>
+              <img src={`${settings}`} alt='gear'/>
+            </section>
+            <p className='worthText'>
+              Administrative Backoffice
+              <br></br>
+              to Support our Clients
+            </p>
+          </section>  
         </div>
+          <button className='worthButton' onClick={() => smoothScroll('.contactRight', 1000)}>Get Started</button>
       </div>
 
-      <div className='leadGen'>
+
+{/* Lead Gen Section */}
+
+      {/* <div className='leadGen'>
         <img src='' alt='leadGen.pdf'/>
         <section>
           <h1>Free Download</h1>
@@ -224,67 +326,157 @@ function App() {
           <input placeholder='Email'></input>
           <button>Download</button>
         </section>
-      </div>
+      </div> */}
 
-      <div className='getStarted'>
-        <div className='leftSide'>
-          <img src='' alt='envelope'/>
-          <h1>Let's Get Started</h1>
-          <p></p>
-        </div>
 
-        <div className='rightSide'>
+{/* Get Started Section */}
+
+      <div className='contactForm'>
+        <div className='contactLeft'>
           <section>
-            <input placeholder='Name'></input>
-            <input placeholder='Email'></input>
+            <img src={`${emailIcon}`} alt='envelope'/>
           </section>
-          <p>Message</p>
-          <input></input>
-          <button>Submit</button>
+          <p className='getStartedText'>Let's Get Started</p>
+          <p className='contactPrompt'>Send us a quick message to request more information. We'll reach out to let you know how we can help you personally in your staffing goals.</p>
+        </div>
+
+        <div className='contactRight'>
+          {/* <section className='contactRightTop'>
+            <input value={name} placeholder='Name' className='contactName' onChange={(e) => setName(e.target.value)}></input>
+            <input value={emailAddress} placeholder='Email' className='contactEmail' onChange={(e) => setEmailAddress(e.target.value)}></input>
+          </section>
+          <br></br>
+          <br></br>
+          <textarea value={messageSubmission} type='text' placeholder='Message' className='contactMessage' onChange={(e) => setMessageSubmission(e.target.value)}></textarea>
+          <br></br>
+          <br></br>
+          <button className='contactButton'>Submit</button> */}
+
+
+{/* <!-- Begin Mailchimp Signup Form --> */}
+
+  <div id="mc_embed_signup">
+
+    <form action="https://yourdigitalcanvas.us6.list-manage.com/subscribe/post?u=7dbf922c554c0aedce97ea470&amp;id=601fc6f61d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+        <h2>Contact Request</h2>
+      
+            
+        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+        <div class="mc-field-group">
+          <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+          <input type="email" value={emailAddress} name="EMAIL" class="required email" id="mce-EMAIL"
+          onChange={(e) => setEmailAddress(e.target.value)}
+          />
+        </div>
+                
+        <div class="mc-field-group">
+          <label for="mce-FNAME">First Name </label>
+          <input type="text" value={name} name="FNAME" class="" id="mce-FNAME"
+          onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+            
+        <div class="mc-field-group">
+          <label for="mce-LNAME">Last Name </label>
+          <input type="text" value={messageSubmission} name="LNAME" class="" id="mce-LNAME"
+          onChange={(e) => setMessageSubmission(e.target.value)}
+          />
+        </div>
+                
+        
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style={{display:'none'}}></div>
+          <div class="response" id="mce-success-response" style={{display:'none'}}></div>
+        </div> 
+
+        {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+        <div style={{position:'absolute', left:'-5000px'}} aria-hidden="true"><input type="text" name="b_7dbf922c554c0aedce97ea470_601fc6f61d" tabindex="-1" value=""/></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"/></div>
+        
+      </div>
+    </form>
+  </div>
+
+{/* <!--End mc_embed_signup--> */}
+
+
+
+
+
+          
         </div>
       </div>
+
+
+{/* Placeholder Section */}
+
+      <div className='placeholderSection'>
+        <p className='placeholderText'>
+          ~We need another type of placeholder statement to go here~
+          <br></br>
+          <br></br>
+          Labore aliqua voluptate commodo eu excepteur quis nulla dolor qui. Excepteur commodo nostrud ad fugiat enim aliquip non consectetur occaecat. Do deserunt minim reprehenderit sunt cillum duis quis et aliqua laboris exercitation culpa. Ipsum quis voluptate id Lorem id exercitation ullamco sit pariatur magna veniam esse.
+        </p>
+      </div>
+
+{/* Footer Section */}
 
       <div className='footer'>
         <div className='footerLeft'>
           <section>
-            <h1></h1>
-            <p></p>
-          </section>
-
-          <section>
-            <h1></h1>
-            <p></p>
-            <p></p>
+            <p className='footerMission'>Our Mission</p>
+            <p className='footerMissionText'>
+              ~Do we have a mission statement?~
+            </p>
+            <p className='footerContact'>Contact</p>
+            <p className='footerEmail'>h4@thequalcandidates.com</p>
           </section>
         </div>
 
+{/* Center commented out until we have other pages to link to the Menu items */}
+
         <div className='footerCenter'>
-          <h1>Menu</h1>
-          <h2>Home</h2>
-          <h2>About</h2>
-          <h2>Services</h2>
-          <h2>Blog</h2>
-          <h2>Contact</h2>
+          {/* <p className='footerMenu'>Menu</p>
+          <p className='footerMenuItems'>
+            Home
+            <br></br>
+            About
+            <br></br>
+            Services
+            <br></br>
+            Blog
+            <br></br>
+            Contact
+          </p> */}
+
+          <p className='followUs'>Follow us on Social Media</p>
+            <section className='socialMediaIcons'>
+              <img className='smIcon' src={`${instagram}`} alt='instagramLogo.jpg'/>
+              <img className='smIcon' src={`${twitter}`} alt='twitterLogo.jpg'/>
+              <img className='smIcon' src={`${facebook}`} alt='facebookLogo.jpg'/>
+            </section>
         </div>
 
         <div className='footerRight'>
           <div>
-            <section>
-              <img src='' alt='instagramLogo.jpg'/>
-              <img src='' alt='twitterLogo.jpg'/>
-              <img src='' alt='facebookLogo.jpg'/>
+            {/* <section className='socialMediaIcons'>
+              <img src={`${instagram}`} alt='instagramLogo.jpg'/>
+              <img src={`${twitter}`} alt='twitterLogo.jpg'/>
+              <img src={`${facebook}`} alt='facebookLogo.jpg'/>
             </section>
-            <section>
-              <img src='' alt='qualifiedCanditatesLogo.jpg'/>
-            </section>
-            <section>
-              <p></p>
-              <p></p>
-            </section>
+            <br></br> */}
 
+            <section>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg'/>
+            </section>
           </div>
-
         </div>
+
       </div>
 
 

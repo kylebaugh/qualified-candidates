@@ -1,0 +1,37 @@
+/* .contactRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width:27.5%;
+    background-color: royalblue;
+  }
+  
+  .contactRightTop{
+    font-size: 40px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+  }
+  
+  .mc-field-group{
+    font-size: 18px;
+  }
+  
+  #mc_embed_signup{
+    width:100%;
+    background-color:rgba(126, 209, 45, 0);
+  }
+  
+  .contactButton{
+    background-color: rgba(255, 159, 43);
+  }
+  
+  .asdf{
+    background-color: salmon;
+    display:flex;
+    max-width: 90%;
+    padding-left: 0px;
+    justify-content: flex-start;
+    align-content: left ;
+  } */
