@@ -1,0 +1,866 @@
+@media (max-width: 1200px){
+   
+    .problemButtonMobile{
+        display:none;
+    }
+    
+    .footerLeftMobile{
+        display:none;
+    }
+    
+    .footerRightMobile{
+        display:none;
+    }
+    
+    .followUsMobile{
+        display:none;
+    }
+    
+    .socialMediaIconsMobile{
+        display:none;
+    }
+    
+    .smIconMobile{
+        display:none;
+    }
+    
+    .footerLogoMobile{
+        display:none;
+    }
+    
+    
+    
+    .header{
+        height:10vw;
+        max-width:1199px;
+        /* background-color: royalblue; */
+    }
+
+    .menuItem1{
+        max-width: 30%;
+        font-size: 20px;
+    }
+    
+    .menuItem2{
+        max-width: 30%;
+        font-size: 20px;
+
+    }
+
+    .menuButton{
+        font-size: 20px;
+        width: 30%;
+    }
+
+    .heroDiv{
+        /* max-height:500px;
+        min-width:1199px; */
+        max-height: 800px;
+        min-height: 650px;
+        /* padding-left: 0%; */
+    }
+
+
+    .heroSection1{
+        max-width: 50%;
+        font-size: 40px;
+    }
+
+    .actionButton{
+        width:17.5%;
+        height:5vh;
+        font-size: 20px;
+      }
+
+    .tombstones{
+    display:flex;
+    width:80%;
+    height:25vh;
+    margin-bottom: 15vh;
+    }
+
+    .theProblem{
+        display:flex;
+        justify-content: space-evenly;
+        height:100vh;
+        text-align: left;
+        margin-bottom: 7.5vw;
+        /* background-color: royalblue; */
+      }
+
+      .problemText{
+        font-size: 20px;
+        margin-top:-1vh;
+      }
+      
+      .clockIcon{
+        height:35%;
+        width:66%;
+      }
+
+      .problemLeftHeader{
+          font-size: 40px;
+          font-weight: bolder;
+      }
+
+      .problemButton{
+        width:65%;
+        height:7.5vh;
+        font-size: 22px;
+        font-weight: bold;
+        background-color: rgba(126, 209, 45);
+        color:white;
+        border-radius: 8px;
+      }
+
+      .problemheader{
+          font-size: 30px;
+          margin-bottom: -1vh;
+      }
+
+      .worksIcons{
+          width:85%;
+      }
+
+      .worksText{
+          width:60%;
+      }
+
+      .adminInclusions{
+          width:65%;
+          margin-left: 17.5%;
+      }
+
+      .inclusionsButton{
+          width:35%;
+      }
+
+      .imagineContent{
+          width:75%
+      }
+
+      .worthTombstones{
+          width:90%;
+      }
+
+      .worthTomb{
+          width:25%;
+          padding-left: 2%;
+          padding-right: 2%;
+      }
+
+      .worthButton{
+          width:15%;
+      }
+
+      .contactForm{
+          width:1200px;
+          height:325px;
+          margin-bottom: 5vh;
+          /* padding-top: 10vw; */
+      }
+
+      .contactEmailIcon{
+          height:150px;
+      }
+
+      .getStartedText{
+          font-size: 35px;
+      }
+
+      .contactPrompt{
+          font-size: 18px;
+      }
+
+      .placeholderSection{
+          margin-bottom: 6vh;
+      }
+
+      .followUs{
+          font-size: 20px;
+      }
+
+      .smIcon{
+          height:30px;
+      }
+
+      .footerLogo{
+          width:100%;
+          margin-top: 20%;
+      }
+}
+
+@media (max-width: 992px){
+
+    .header{
+        max-width:992px;
+        height: 10vw;
+    }
+
+    .heroDiv{
+        width: 992px;
+        background-repeat:unset;
+    }
+
+    .tombstones{
+        height:30vw;
+        width:85%;
+        margin-left: 7.5%;
+        margin-bottom: 7.5vw;
+    }
+
+
+    .theProblem{
+        display:flex;
+        justify-content: space-evenly;
+        height:100vh;
+        text-align: left;
+        margin-bottom: 7.5vw;
+      }
+
+      .problemText{
+        font-size: 18px;
+        margin-top:-1vh;
+      }
+      
+      .clockIcon{
+        height:22.5%;
+        width:50%;
+      }
+
+      .problemLeftHeader{
+          font-size: 30px;
+          font-weight: bolder;
+      }
+
+      .problemButton{
+        width:65%;
+        height:7.5vh;
+        font-size: 22px;
+        font-weight: bold;
+        background-color: rgba(126, 209, 45);
+        color:white;
+        border-radius: 8px;
+      }
+
+      .problemHeader{
+          font-size: 30px;
+      }
+
+      .inclusionsButton{
+          width:45%;
+      }
+
+      .imagineText{
+          font-size: 25px;
+      }
+
+      .contactForm{
+          margin-left: -10vw;
+      }
+      .footerLeft{
+          width:30%
+      }
+    
+      .footerCenter{
+          width:30%
+      }
+
+      .footerRight{
+          width:30%;
+          margin-top: 5%;
+      }
+
+}
+
+
+@media (max-width: 768px){
+
+    .header{
+        height:10vw;
+        max-width:767px;
+        /* background-color: royalblue; */
+    }
+
+    .headerLogo{
+        max-width:75%;
+    }
+
+    .headerMenu{
+        width:60%;
+    }
+
+    .menuItem1{
+        max-width: 30%;
+        font-size: 18px;
+    }
+    
+    .menuItem2{
+        max-width: 30%;
+        font-size: 18px;
+
+    }
+
+    .menuButton{
+        font-size: 18px;
+        width: 30%;
+    }
+
+    .heroDiv{
+        /* max-height:500px;
+        min-width:1199px; */
+        max-height: 800px;
+        min-height: 650px;
+        /* padding-left: 0%; */
+    }
+
+
+    .heroSection1{
+        max-width: 50%;
+        font-size: 40px;
+    }
+
+    .actionButton{
+        width:17.5%;
+        height:5vh;
+        font-size: 20px;
+      }
+
+    .tombstones{
+        display:flex;
+        width:80%;
+        height:25vh;
+        margin-bottom: 15vw;
+        margin-left: 10vw;
+    }
+
+    .stoneHeader{
+        font-size: 20px;
+    }
+
+    .stoneText{
+        font-size: 18px;
+    }
+
+    .theProblem{
+        display:flex;
+        justify-content: space-evenly;
+        height:100vh;
+        text-align: left;
+        margin-bottom: 15vw;
+        /* background-color: royalblue; */
+      }
+
+      .problemText{
+        font-size: 20px;
+        margin-top:-1vh;
+      }
+      
+      .clockIcon{
+        max-height:150px;
+        max-width:150px;
+      }
+
+      .problemLeftHeader{
+          font-size: 40px;
+          font-weight: bolder;
+      }
+
+      .problemButton{
+        min-width:50%;
+        /* height:7.5vh; */
+        font-size: 18px;
+        font-weight: bold;
+        background-color: rgba(126, 209, 45);
+        color:white;
+        border-radius: 8px;
+      }
+
+      .problemheader{
+          font-size: 30px;
+          margin-bottom: -1vh;
+      }
+
+      .workIcons{
+        width:90%;
+        padding-top: 20px;
+    }
+
+    .iconImage{
+        width:200px;
+        height:250px;
+    }
+
+    .worksText{
+        width:80%;
+    }
+
+    .adminInclusions{
+        width:70%;
+    }
+
+    .inclusionsButton{
+        width:45%;
+    }
+
+
+    .imagineContent{
+        width:85%;
+        justify-content: space-between;
+    }
+
+    .imagineText{
+        font-size: 20px;
+    }
+
+    .worthTomb{
+        justify-content: space-evenly;
+    }
+
+    .worthText{
+        font-size: 18px;
+    }
+
+    .worthButton{
+        width:25%;
+    }
+
+    .contactForm{
+        margin-left: -15vw;
+    }
+
+    .contactLeft{
+        width:20%;
+        margin-left: -15%;
+    }
+
+    .contactEmailIcon{
+        width:175px;
+        height:auto;
+        align-self: center;
+    }
+
+    .getStartedText{
+        font-size: 30px;
+    }
+
+    .contactPrompt{
+        font-size: 18px;
+    }
+    .contactRight{
+        width:20%;
+        margin-left: -20%;
+    }
+
+    #mc_embed_signup{
+        width:100%;
+        background-color:rgba(126, 209, 45, 0);
+      }
+
+    .placeholderText{
+        width:65%;
+        font-size: 20px;
+    }
+    
+
+    .footerLeft{
+        height:90%;
+        width:30%;
+    }
+
+    .footerMission{
+        font-size: 20px;
+    }
+
+    .footerMissionText{
+        font-size: 16px;
+    }
+
+    .footerContact{
+        font-size: 20px;
+    }
+    .footerEmail{
+        font-size: 16px;
+    }
+  
+    .footerCenter{
+        height:90%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:30%;
+    }
+
+    .followUs{
+        font-size: 16px;
+        /* margin-top: 35%; */
+        
+    }
+
+    .footerRight{
+        height:90%;
+        width:30%;
+        margin-top: 3%;
+        margin-bottom: 1.5%;
+    }
+
+    .footerLogo{
+        margin-top: 20%;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+/* HEADER/MENU SECTION */
+    .header{
+        height:12.5vw;
+        max-width:767px;
+        /* background-color: royalblue; */
+    }
+
+    .headerLogo{
+        max-width:85%;
+    }
+
+    .headerMenu{
+        width:60%;
+    }
+
+    .menuItem1{
+        max-width: 30%;
+        font-size: 16px;
+    }
+    
+    .menuItem2{
+        max-width: 30%;
+        font-size: 16px;
+    }
+
+    .menuButton{
+        font-size: 16px;
+        width: 30%;
+        min-height: 9vw
+    }
+
+/* HERO SECTION */
+
+    .heroDiv{
+        max-height: 700px;
+        min-height: 550px;
+        align-content: center;
+        padding-left: 7.5%;
+    }
+
+    .heroSection1{
+        max-width: 50%;
+        font-size: 30px;
+        text-align: center;
+        margin-top: -7%;
+        margin-bottom: 5%;
+    }
+
+    .heroSection2{
+        max-width: 50%;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .actionButton{
+        width:17.5%;
+        height:5vh;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 15%;
+      }
+
+
+/* TOMBSTONES SECTION */
+    .tombstones{
+        display:flex;
+        width:90%;
+        height:25vh;
+        margin-bottom: 7.5vw;
+        margin-left: 5%;
+    }
+
+    .stone{
+        width:30%;
+        justify-content: space-evenly;
+    }
+
+    .stoneHeader{
+        font-size: 20px;
+    }
+
+    .stoneText{
+        font-size: 16px;
+    }
+
+
+/* PROBLEM SECTION */
+    .theProblem{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height:fit-content;
+        width:100%;
+        text-align: center;
+        margin-bottom: 7.5vw;
+    }
+
+    .clockIcon{
+        display:none;
+    }
+
+    .problemText{
+        font-size: 20px;
+        margin-top:-1vh;
+    }
+        
+    .problemLeftSide{
+        width:75%;
+        align-self: center;
+    }
+
+    .clockIcon{
+        max-height:150px;
+        max-width:150px;
+    }
+
+    .problemLeftHeader{
+        font-size: 40px;
+    }
+
+    .problemButton{
+        display:none;
+    }
+
+    .problemRightSide{
+        width:75%;
+        align-self: center;
+    }
+
+    .problemButtonMobile{
+        display:flex;
+        justify-content: center;
+        width:40%;
+        height:40px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: rgba(126, 209, 45);
+        color:white;
+        border-radius: 8px;
+        align-self: center;
+        text-align: center;
+        padding-top: 7.5px;
+        margin-top: 5%;
+    }
+
+    .problemheader{
+        font-size: 30px;
+        margin-bottom: -1vh;
+    }
+
+/* HOW IT WORKS SECTION */
+
+    .workIcons{
+        width:90%;
+        padding-top: 20px;
+    }
+
+    .iconImage{
+        width:175px;
+        height:225px;
+    }
+
+    .worksText{
+        width:80%;
+    }
+
+    .adminInclusions{
+        width:80%;
+        margin-left: 10%;
+    }
+
+    .inclusionIcon{
+        height:80px;
+    }
+
+    .inclusionsButton{
+        width:55%;
+    }
+
+/* IMAGINE SECTION */
+
+    .imagineContent{
+        width:90%;
+        justify-content: space-between;
+    }
+
+    .imagineText{
+        font-size: 20px;
+        max-width:60%;
+    }
+
+    .worthTomb{
+        justify-content: space-evenly;
+    }
+
+    .worthIcon{
+        height:120px;
+    }
+
+    .worthText{
+        font-size: 18px;
+    }
+
+    .worthButton{
+        width:25%;
+    }
+
+
+/* CONTACT FORM SECTION */
+
+    .contactForm{
+        margin-left: -105vw;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .contactLeft{
+        width:20%;
+        margin-left: 50%;
+    }
+
+    .contactEmailIcon{
+        width:175px;
+        height:auto;
+        align-self: center;
+    }
+
+    .getStartedText{
+        font-size: 30px;
+    }
+
+    .contactPrompt{
+        font-size: 18px;
+    }
+    .contactRight{
+        width:30%;
+        margin-left: -20%;
+        margin-left: 50%;
+        margin-bottom: 3%;
+
+    }
+
+    #mc_embed_signup{
+        width:100%;
+        background-color:rgba(126, 209, 45, 0);
+      }
+
+    .placeholderText{
+        width:65%;
+        font-size: 18px;
+    }
+    
+/* FOOTER SECTION */
+    .footerLeft{
+        display:none;
+    }
+
+    .footerLeftMobile{
+        display:flex;
+        width:40%;
+        height:90%;
+        width:27.5%;
+    }
+
+    .footerMission{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .footerMissionText{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .footerContact{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .footerEmail{
+        font-size: 14px;
+        text-align: left;
+    }
+  
+    .footerCenter{
+        height:90%;
+        display:none;
+        flex-direction: column;
+        justify-content: space-between;
+        width:27.5%;
+    }
+
+    .followUs{
+        display:none;
+    }
+
+    .socialMedaiIcons{
+        display:none;
+    }
+
+    .smIcon{
+        display:none;
+    }
+    
+    .footerRight{
+        display:none;
+        width:30%;
+    }
+
+    .footerRightMobile{
+        display:flex;
+        height:90%;
+        width:40%;
+    }
+    
+    .followUsMobile{
+        display:flex;
+        width:150%;
+        font-size: 16px;
+        margin-left: 5%;
+    }
+    
+    .socialMediaIconsMobile{
+        display:flex;
+        width:100%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    
+    .smIcon{
+        height: -50%;
+    }
+    
+    .smIconMobile{
+        display:flex;
+        height: 30px;
+    }
+    .footerLogo{
+        display:none;
+    }
+
+    .footerLogoMobile{
+        display:flex;
+        width:135%;
+        margin-left: -30%;
+    }
+
+}

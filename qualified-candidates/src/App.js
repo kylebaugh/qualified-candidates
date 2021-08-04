@@ -1,5 +1,4 @@
 import './App.css';
-import './responsive.css'
 import { useState, useEffect } from 'react';
 
 // Logos
@@ -62,6 +61,15 @@ function smoothScroll(target, duration){
   requestAnimationFrame(animation)
 }
 
+let mButton = document.getElementsByClassName('menuButton')
+
+// const clicker = () =>{
+//   console.log(mButton)
+// } 
+
+// mButton.addEventListener('click',function(){
+//   smoothScroll('.contactForm', 1000)
+// })
 
 
 function App() {
@@ -77,7 +85,7 @@ function App() {
 
       <div className='header'>
         <section className='headerLogo'>
-        <img src={`${qualifiedCandidates}`} alt='qualifiedCandidatesLogo' className='headerLogo'/>
+        <img src={`${qualifiedCandidates}`} alt='qualifiedCandidatesLogo'/>
         </section>
         <section className='headerMenu'>
           <p className='menuItem1' onClick={() => smoothScroll('.theProblem', 1000)}>The Problem</p>
@@ -117,7 +125,7 @@ function App() {
           <p className='stoneText'>Our screening brings you qualified candidates to fill your needs.</p>
         </section>
         <section className='stone'>
-          <h1 className='stoneHeader'>Make Life Easy</h1>
+          <h1 className='stoneHeader'>Make life easy</h1>
           <p className='stoneText'>Our passion is to take as much off your plate as possible.
             <br></br>
             We'll do the legwork, you make the hiring decision.
@@ -131,7 +139,7 @@ function App() {
       <div className='theProblem' id='theProblem'>
         <div className='problemLeftSide'>
           <img src={`${clockIcon}`} alt='clock Icon' className='clockIcon'/>
-          <p className='problemLeftHeader'>Hiring Burns Time and Effort</p>
+          <h1 className='problemLeftHeader'>Hiring Burns Time and Effort</h1>
           <p className='problemText'>Posting ads, screening resumes and applicants, setting up
             calls and meetings, all these things take your time and 
             costs you valuable hours each day.
@@ -142,7 +150,7 @@ function App() {
         
         <div className='problemRightSide'>
           <section>
-            <p className='problemHeader'>Where do you find qualified people ready to work?</p>
+            <h2 className='problemHeader'>Where do you find qualified people ready to work?</h2>
             <p className='problemText'>Hiring managers spend hours finding the right places
               to post ads to find candidates. Our team gives you 
               those hours back.
@@ -150,7 +158,7 @@ function App() {
           </section>
 
           <section>
-            <p className='problemHeader'>Hundreds of applications or resumes clog your inbox.</p>
+            <h2 className='problemHeader'>Hundreds of applications or resumes clog your inbox.</h2>
             <p className='problemText'>The volume of applicants can be too few or too many. 
               We screen for you, ensuring your inbox is only filled 
               with candidates you actually want to talk to.
@@ -158,14 +166,12 @@ function App() {
           </section>
 
           <section>
-            <p className='problemHeader'>A Hiring Manager should focus on Hiring</p>
+            <h2 className='problemHeader'>A Hiring Manager should focus on Hiring</h2>
             <p className='problemText'>Our staff handles the busy work, letting you focus 
               on what you're best at: Hiring the right people for 
               your organization.
             </p>
           </section>
-          <button className='problemButtonMobile' onClick={() => smoothScroll('.contactForm', 1000)}>Start Saving Time</button>
-
         </div>
       </div>
 
@@ -177,14 +183,14 @@ function App() {
         <div className='worksIcons'>
           <section className='workIcon'>
             <section className='workIconTop'>
-              <img src={`${laptop}`} alt='laptop' className='iconImage'/>
+              <img src={`${laptop}`} alt='laptop'/>
             </section>
             <p className='iconText'>Candidates Apply</p>
           </section>
           
           <section className='workIcon'>
             <section className='workIconTop'>
-                <img src={`${group}`} alt='group' className='iconImage'/>
+                <img src={`${group}`} alt='group'/>
               </section>
 
               <p className='iconText'>We Source Staff</p>
@@ -192,7 +198,7 @@ function App() {
           
           <section className='workIcon'>
             <section className='workIconTop'>
-                <img src={`${notepad}`} alt='notepad' className='iconImage'/>
+                <img src={`${notepad}`} alt='notepad' className='iconIcon'/>
               </section>
               <p className='iconText'>You Interview &amp; Hire</p>
           </section>
@@ -279,14 +285,14 @@ function App() {
         <div className='worthTombstones'>
           <section className='worthTomb'>
             <section>
-              <img src={`${clock2}`} alt='clock' className='worthIcon'/>
+              <img src={`${clock2}`} alt='clock'/>
             </section>
             <p className='worthText'>Save Time &amp; Money</p>
           </section>
           
           <section className='worthTomb'>
             <section>
-              <img src={`${group2}`} alt='people' className='worthIcon'/>
+              <img src={`${group2}`} alt='people'/>
             </section>
             <p className='worthText'>
               Large resouce of diversity
@@ -297,7 +303,7 @@ function App() {
 
           <section className='worthTomb'>
             <section>
-              <img src={`${settings}`} alt='gear' className='worthIcon'/>
+              <img src={`${settings}`} alt='gear'/>
             </section>
             <p className='worthText'>
               Administrative Backoffice
@@ -327,8 +333,8 @@ function App() {
 
       <div className='contactForm'>
         <div className='contactLeft'>
-          <section className='contactEmailIcon'>
-            <img src={`${emailIcon}`} alt='envelope' className='contactEmailIcon'/>
+          <section>
+            <img src={`${emailIcon}`} alt='envelope'/>
           </section>
           <p className='getStartedText'>Let's Get Started</p>
           <p className='contactPrompt'>Send us a quick message to request more information. We'll reach out to let you know how we can help you personally in your staffing goals.</p>
@@ -356,7 +362,7 @@ function App() {
         <h2>Contact Request</h2>
       
             
-        {/* <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> */}
+        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
         <div class="mc-field-group">
           <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
           <input type="email" value={emailAddress} name="EMAIL" class="required email" id="mce-EMAIL"
@@ -410,7 +416,7 @@ function App() {
           ~We need another type of placeholder statement to go here~
           <br></br>
           <br></br>
-          Labore aliqua voluptate commodo eu excepteur quis nulla dolor qui. 
+          Labore aliqua voluptate commodo eu excepteur quis nulla dolor qui. Excepteur commodo nostrud ad fugiat enim aliquip non consectetur occaecat. Do deserunt minim reprehenderit sunt cillum duis quis et aliqua laboris exercitation culpa. Ipsum quis voluptate id Lorem id exercitation ullamco sit pariatur magna veniam esse.
         </p>
       </div>
 
@@ -421,18 +427,7 @@ function App() {
           <section>
             <p className='footerMission'>Our Mission</p>
             <p className='footerMissionText'>
-              ~Mission Statement~
-            </p>
-            <p className='footerContact'>Contact</p>
-            <p className='footerEmail'>h4@thequalcandidates.com</p>
-          </section>
-        </div>
-
-        <div className='footerLeftMobile'>
-          <section>
-            <p className='footerMission'>Our Mission</p>
-            <p className='footerMissionText'>
-              ~Mission Statement~
+              ~Do we have a mission statement?~
             </p>
             <p className='footerContact'>Contact</p>
             <p className='footerEmail'>h4@thequalcandidates.com</p>
@@ -456,11 +451,11 @@ function App() {
           </p> */}
 
           <p className='followUs'>Follow us on Social Media</p>
-          <section className='socialMediaIcons'>
-            <img className='smIcon' src={`${instagram}`} alt='instagramLogo.jpg'/>
-            <img className='smIcon' src={`${twitter}`} alt='twitterLogo.jpg'/>
-            <img className='smIcon' src={`${facebook}`} alt='facebookLogo.jpg'/>
-          </section>
+            <section className='socialMediaIcons'>
+              <img className='smIcon' src={`${instagram}`} alt='instagramLogo.jpg'/>
+              <img className='smIcon' src={`${twitter}`} alt='twitterLogo.jpg'/>
+              <img className='smIcon' src={`${facebook}`} alt='facebookLogo.jpg'/>
+            </section>
         </div>
 
         <div className='footerRight'>
@@ -471,45 +466,13 @@ function App() {
               <img src={`${facebook}`} alt='facebookLogo.jpg'/>
             </section>
             <br></br> */}
-              <p className='followUsMobile'>Follow us on Social Media</p>
-
-              <section className='socialMediaIconsMobile'>
-                <img className='smIconMobile' src={`${instagram}`} alt='instagramLogo.jpg'/>
-                <img className='smIconMobile' src={`${twitter}`} alt='twitterLogo.jpg'/>
-                <img className='smIconMobile' src={`${facebook}`} alt='facebookLogo.jpg'/>
-              </section>
 
             <section>
               <br></br>
               <br></br>
               <br></br>
               <br></br>
-              <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg' className='footerLogo'/>
-              <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg' className='footerLogoMobile'/>
-            </section>
-          </div>
-        </div>
-
-        <div className='footerRightMobile'>
-          <div>
-            {/* <section className='socialMediaIcons'>
-              <img src={`${instagram}`} alt='instagramLogo.jpg'/>
-              <img src={`${twitter}`} alt='twitterLogo.jpg'/>
-              <img src={`${facebook}`} alt='facebookLogo.jpg'/>
-            </section>
-            <br></br> */}
-              <p className='followUsMobile'>Follow us on Social Media</p>
-
-              <section className='socialMediaIconsMobile'>
-                <img className='smIconMobile' src={`${instagram}`} alt='instagramLogo.jpg'/>
-                <img className='smIconMobile' src={`${twitter}`} alt='twitterLogo.jpg'/>
-                <img className='smIconMobile' src={`${facebook}`} alt='facebookLogo.jpg'/>
-              </section>
-
-            <section>
-
-              <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg' className='footerLogo'/>
-              <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg' className='footerLogoMobile'/>
+              <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg'/>
             </section>
           </div>
         </div>
