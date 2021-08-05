@@ -16,7 +16,7 @@ html,body
   display: flex;
   justify-content: space-between;
   max-width:100vw;
-  height:6.5vw;
+  height:130px;
   padding-left: 5vw;
 
 }
@@ -40,7 +40,7 @@ html,body
 }
 
 .menuItem1{
-  max-width: 20%;
+  max-width: 25%;
   font-size: 25px;
   align-self:center;
 }
@@ -51,7 +51,7 @@ html,body
 }
 
 .menuItem2{
-  max-width: 20%;
+  max-width: 25%;
   font-size: 25px;
   align-self:center;
 }
@@ -73,7 +73,7 @@ html,body
 }
 
 .menuButton{
-  width: 20%;
+  width: 25%;
   height:40%;
   font-size: 22.5px;
   font-weight: bold;
@@ -87,6 +87,8 @@ html,body
   cursor: pointer;
   background-color: rgb(108, 177, 40);
 }
+
+/* HERO SECTION */
 
 .heroDiv{
   background-image: 
@@ -110,6 +112,7 @@ html,body
   font-weight: bold;
   color:white;
   margin-bottom: -.15%;
+  margin-top: -7.5vw;
 
 }
 
@@ -123,13 +126,15 @@ html,body
 }
 
 .actionButton{
-  width:10%;
-  height:5vh;
+  width:fit-content;
+  height:3.5vw;
   font-size: 22.5px;
   font-weight: bold;
   background-color: rgba(126, 209, 45);
   color:white;
   border-radius: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .actionButton:hover{
@@ -137,15 +142,17 @@ html,body
   background-color: rgb(108, 177, 40);
 }
 
+
+/* TOMBSTONE SECTION */
+
 .tombstones{
   display:flex;
   width:80%;
-  height:20vh;
+  height:fit-content;
   margin-left: 10%;
   justify-content: space-between;
   justify-self: center;
   margin-bottom: 5%;
-  /* background-color: green; */
 }
 
 .stone{
@@ -155,7 +162,7 @@ html,body
   width:30%;
   min-height:80%;
   border-radius: 8px;
-  margin-top: -5vh;
+  margin-top: -5vw;
   background-color: white;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);}
 
@@ -172,10 +179,12 @@ html,body
   align-self: center;
 }
 
+/* PROBLEM SECTION */
+
 .theProblem{
   display:flex;
   justify-content: space-evenly;
-  height:67.5vh;
+  height:fit-content;
   text-align: left;
   margin-bottom: 2.5vw;
 }
@@ -192,8 +201,9 @@ html,body
 }
 
 .clockIcon{
-  height:35%;
-  width:35%;
+  height:15vw;
+  width:15vw;
+  /* width:35%; */
 }
 
 
@@ -204,8 +214,8 @@ html,body
 }
 
 .problemButton{
-  width:35%;
-  height:5vh;
+  width:55%;
+  height:45px;
   font-size: 22.5px;
   font-weight: bold;
   background-color: rgba(126, 209, 45);
@@ -236,11 +246,14 @@ html,body
   font-weight: bolder;
 }
 
+
+/* HOW IT WORKS SECTION */
+
 .howItWorks{
   display:flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 110vh;
+  min-height: fit-content;
   width:100%;
   background-color: rgba(255, 159, 43) 
   ;
@@ -257,7 +270,7 @@ html,body
   display:flex;
   justify-content: space-between;
   align-self: center;
-  width:65%;
+  min-width:75%;
 
 }
 
@@ -266,7 +279,6 @@ html,body
   flex-direction: column;
   justify-content: center;
   width:25%;
-  /* background-color: royalblue; */
 }
 
 .iconImage{
@@ -288,24 +300,19 @@ html,body
 }
 
 .worksText{
-  width:40%;
+  width:65%;
   font-size: 20px;
   color:white;
   align-self: center;
 }
 
-
-
-
 .adminInclusions{
   display:flex;
   flex-direction: column;
-  /* justify-content:space-around; */
   align-content: center;
   align-items: center;
-  /* background-color: pink; */
-  width:50%;
-  margin-left: 25%;
+  width:75%;
+  align-self: center;
   margin-bottom: 7.5%;
 }
 
@@ -314,7 +321,6 @@ html,body
   justify-content: space-between;
   align-items: center;
   width:100%;
-  /* background-color:royalblue; */
 }
 
 .inclusion{
@@ -335,7 +341,7 @@ html,body
 
 .inclusionsButton{
   width:30%;
-  height:5vh;
+  height:45px;
   font-size: 22.5px;
   font-weight: bold;
   background-color: rgba(126, 209, 45);
@@ -347,6 +353,8 @@ html,body
   cursor: pointer;
   background-color: rgb(108, 177, 40);
 }
+
+/* IMAGINE SECTION */
 
 .imagine{
   display:flex;
@@ -361,23 +369,22 @@ html,body
 
 .imagineContent{
   display: flex;
-  width:55%;
-  justify-content: space-evenly;
+  width:75%;
+  justify-content: space-between;
   align-items: center;
 }
 
 .imagineText{
-  width:70%;
+  width:75%;
   font-size: 30px;
 }
 
+/* WORTH YOUR WHILE SECTION */
 
 .worthYourWhile{
   display:flex;
   flex-direction: column;
   align-items: center;
-
-  /* background-color: gray; */
 }
 
 .worthHeader{
@@ -389,7 +396,7 @@ html,body
 .worthTombstones{
   display:flex;
   justify-content: space-between;
-  width:70%;
+  width:75%;
   /* background-color: royalblue; */
 }
 
@@ -410,8 +417,8 @@ html,body
 }
 
 .worthButton{
-  width:10%;
-  height:5vh;
+  width:15vw;
+  height:50px;
   font-size: 22.5px;
   font-weight: bold;
   margin-top: 5vw;
@@ -426,11 +433,12 @@ html,body
   background-color: rgb(108, 177, 40);
 }
 
+/* CONTACT FORM SECTION */
+
 .contactForm{
   background-image: 
     linear-gradient(to bottom, rgba(126, 209, 45, 0.5), rgba(126, 209, 45, 0.5)),
     url('./assets/pictures/christina-wocintechchat-com-VpcgTEKerEQ-unsplash.png');
-    /* transform: scaleX(-1); */
   background-repeat: no-repeat;
   background-size: cover;
   display:flex;
@@ -447,9 +455,7 @@ html,body
   flex-direction: column;
   width:25%;
   padding-top: 5vw;
-  margin-left: -5vw;
   justify-content: space-around;
-  /* background-color: royalblue; */
 }
 
 .getStartedText{
@@ -460,7 +466,9 @@ html,body
 
 .contactPrompt{
   font-size:20px;
+  width:125%;
   margin-top: -2.5%;
+  margin-left: -12.5%;
   font-weight: bold;
   color:black
 }
@@ -470,7 +478,7 @@ html,body
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width:22.5%;
+  width:25%;
   background-color: white;
 }
 
@@ -494,87 +502,7 @@ html,body
   background-color: rgba(255, 159, 43);
 }
 
-
-/* #mc-embedded-subscribe{
-  font-size: 24px;
-  align-content: center;
-  background-color: rgba(255, 159, 43);
-} */
-
-
-/* .contactRightTop{
-  display: flex;
-  justify-content: space-between;
-  width:100%;
-}
-
-.contactName{
-  background-color:rgba(127, 209, 45, 0);
-  width:40%;
-  min-height:30px;
-  font-size: 18px;
-  color:black;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-color: black;
-}
-
-.contactName::placeholder{
-  color:black;
-  font-size: 18px;
-}
-
-.contactEmail{
-  background-color:rgba(126, 209, 45, 0);
-  width:40%;
-  font-size: 18px;
-  color:black;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-color: black;
-}
-
-.contactEmail::placeholder{
-  color:black;
-  font-size: 18px;
-  text-align: top ;
-
-}
-
-.contactMessage{
-  background-color:rgba(126, 209, 45, 0);
-  font-family: 'Montserrat', sans-serif;
-  width:99%;
-  min-height:200px;
-  font-size: 18px;
-  color:black;
-  text-align: unset, start, top;
-  border-color: black;
-}
-
-.contactMessage::placeholder{
-  color:black;
-  font-size: 18px;
-}
-.contactButton{
-  width:30%;
-  height:5vh;
-  font-size: 22.5px;
-  font-weight: bold;
-  background-color:rgba(255, 159, 43);
-  color:white;
-  border-radius: 8px;
-}
-
-.contactButton:hover{
-  cursor: pointer;
-  background-color: rgb(191, 123, 40);
-} */
-
-
-
+/* PLACEHOLDER SECTION */
 
 
 .placeholderSection{
@@ -582,8 +510,7 @@ html,body
   justify-content: center;
   align-items: center;
   width:100%;
-  height:10vw;
-  /* background-color: royalblue; */
+  height:fit-content;
 }
 
 .placeholderText{
@@ -592,6 +519,7 @@ html,body
   font-weight: bold;
 }
 
+/* FOOTER SECTION */
 
 .footer{
   display: flex;
@@ -609,7 +537,6 @@ html,body
   flex-direction: column;
   width: 25%;
   text-align: left;
-  /* background-color: royalblue; */
 }
 
 .footerMission{
@@ -645,7 +572,6 @@ html,body
   flex-direction: column;
   align-content: center;
   width: 25%;
-  /* background-color: royalblue; */
 }
 
 .footerMenu{
@@ -662,17 +588,14 @@ html,body
   flex-direction: column;
   align-items: flex-end;
   width: 25%;
-  /* background-color: royalblue; */
+  padding-top: 2.5vw;
 }
 
 .socialMediaIcons{
   display:flex;
   width:100%;
   align-items: center;
-  /* padding-left: 27.5%; */
   justify-content: space-evenly;
-  /* background-color: green; */
-
 }
 
 .socialMediaIcons:hover{
@@ -686,6 +609,9 @@ html,body
 .smIcon{
   height:40px
 }
+
+
+/* MOBILE ONLY SECTIONS */
 
 .problemButtonMobile{
   display:none;
