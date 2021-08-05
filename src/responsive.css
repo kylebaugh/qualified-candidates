@@ -1,35 +1,7 @@
 @media (max-width: 1200px){
-   
-    .problemButtonMobile{
-        display:none;
-    }
-    
-    .footerLeftMobile{
-        display:none;
-    }
-    
-    .footerRightMobile{
-        display:none;
-    }
-    
-    .followUsMobile{
-        display:none;
-    }
-    
-    .socialMediaIconsMobile{
-        display:none;
-    }
-    
-    .smIconMobile{
-        display:none;
-    }
-    
-    .footerLogoMobile{
-        display:none;
-    }
-    
-    
-    
+     
+/* HEADER SECTION */
+
     .header{
         height:10vw;
         max-width:1199px;
@@ -52,14 +24,12 @@
         width: 30%;
     }
 
+    /* HERO SECTION */
+
     .heroDiv{
-        /* max-height:500px;
-        min-width:1199px; */
         max-height: 800px;
         min-height: 650px;
-        /* padding-left: 0%; */
     }
-
 
     .heroSection1{
         max-width: 50%;
@@ -72,12 +42,17 @@
         font-size: 20px;
       }
 
+/* TOMBSTONE SECTION */
+
     .tombstones{
-    display:flex;
-    width:80%;
-    height:25vh;
-    margin-bottom: 15vh;
+        display:flex;
+        width:80%;
+        height:25vh;
+        margin-bottom: 15vh;
     }
+
+
+    /* PROBLEM SECTION */
 
     .theProblem{
         display:flex;
@@ -85,7 +60,6 @@
         height:100vh;
         text-align: left;
         margin-bottom: 7.5vw;
-        /* background-color: royalblue; */
       }
 
       .problemText{
@@ -118,6 +92,9 @@
           margin-bottom: -1vh;
       }
 
+
+/* HOW IT WORKS SECTION */
+
       .worksIcons{
           width:85%;
       }
@@ -127,17 +104,21 @@
       }
 
       .adminInclusions{
-          width:65%;
-          margin-left: 17.5%;
+          width:75%;
       }
 
       .inclusionsButton{
           width:35%;
       }
 
+
+/* IMAGINE SECTION */
+
       .imagineContent{
           width:75%
       }
+
+/* WORTH YOUR WHILE SECTION */
 
       .worthTombstones{
           width:90%;
@@ -153,11 +134,13 @@
           width:15%;
       }
 
+
+/* CONTACT FORM SECTION */
+
       .contactForm{
           width:1200px;
           height:325px;
           margin-bottom: 5vh;
-          /* padding-top: 10vw; */
       }
 
       .contactEmailIcon{
@@ -172,9 +155,15 @@
           font-size: 18px;
       }
 
+
+/* PLACEHOLDER SECTION */
+
       .placeholderSection{
           margin-bottom: 6vh;
       }
+
+
+/* FOOTER SECTION */
 
       .followUs{
           font-size: 20px;
@@ -188,34 +177,72 @@
           width:100%;
           margin-top: 20%;
       }
+
+/* MOBILE SECTION */
+    .problemButtonMobile{
+        display:none;
+    }
+    
+    .footerLeftMobile{
+        display:none;
+    }
+    
+    .footerRightMobile{
+        display:none;
+    }
+    
+    .followUsMobile{
+        display:none;
+    }
+    
+    .socialMediaIconsMobile{
+        display:none;
+    }
+    
+    .smIconMobile{
+        display:none;
+    }
+    
+    .footerLogoMobile{
+        display:none;
+    }
 }
 
 @media (max-width: 992px){
 
+/* HEADER SECTION */
     .header{
         max-width:992px;
         height: 10vw;
     }
+
+
+/* HERO SECTION */
 
     .heroDiv{
         width: 992px;
         background-repeat:unset;
     }
 
+    
+/* TOMBSTONE SECTION */
+
     .tombstones{
-        height:30vw;
+        height:fit-content;
         width:85%;
         margin-left: 7.5%;
-        margin-bottom: 7.5vw;
+        margin-bottom: 2.5vw;
     }
 
+
+/* PROBLEM SECTION */
 
     .theProblem{
         display:flex;
         justify-content: space-evenly;
         height:100vh;
         text-align: left;
-        margin-bottom: 7.5vw;
+        margin-bottom: 5vw;
       }
 
       .problemText{
@@ -251,13 +278,37 @@
           width:45%;
       }
 
-      .imagineText{
-          font-size: 25px;
-      }
+/* HOW IT WORKS SECTION */ 
+      
+    .iconImage{
+        width:180px;
+        height:250px;
+    }
+
+
+/* IMAGINE SECTION */
+
+    .imagineText{
+        font-size: 25px;
+    }
+
+
+/* CONTACT FORM SECTION */
 
       .contactForm{
           margin-left: -10vw;
+          margin-bottom: 0px;
       }
+
+
+/* PLACEHOLDER SECTION */
+      .placeholderSection{
+          height:fit-content;
+          margin-bottom: 0px;
+      }
+
+/* FOOTER SECTION */
+
       .footerLeft{
           width:30%
       }
@@ -268,13 +319,17 @@
 
       .footerRight{
           width:30%;
-          margin-top: 5%;
       }
 
+      .footerLogo{
+          margin-top: 10%;
+      }
 }
 
 
 @media (max-width: 768px){
+
+/* HEADER SECTION */
 
     .header{
         height:10vw;
@@ -306,14 +361,13 @@
         width: 30%;
     }
 
+
+/* HERO SECTION */
+
     .heroDiv{
-        /* max-height:500px;
-        min-width:1199px; */
         max-height: 800px;
         min-height: 650px;
-        /* padding-left: 0%; */
     }
-
 
     .heroSection1{
         max-width: 50%;
@@ -325,6 +379,9 @@
         height:5vh;
         font-size: 20px;
       }
+
+
+/* TOMBSTONE SECTION */
 
     .tombstones{
         display:flex;
@@ -342,13 +399,14 @@
         font-size: 18px;
     }
 
+/* PROBLEM SECTION */
+
     .theProblem{
         display:flex;
         justify-content: space-evenly;
         height:100vh;
         text-align: left;
         margin-bottom: 15vw;
-        /* background-color: royalblue; */
       }
 
       .problemText{
@@ -368,7 +426,6 @@
 
       .problemButton{
         min-width:50%;
-        /* height:7.5vh; */
         font-size: 18px;
         font-weight: bold;
         background-color: rgba(126, 209, 45);
@@ -381,7 +438,10 @@
           margin-bottom: -1vh;
       }
 
-      .workIcons{
+
+/* HOW IT WORKS SECTION */
+
+    .workIcons{
         width:90%;
         padding-top: 20px;
     }
@@ -404,6 +464,8 @@
     }
 
 
+/* IMAGINE SECTION */
+
     .imagineContent{
         width:85%;
         justify-content: space-between;
@@ -412,6 +474,9 @@
     .imagineText{
         font-size: 20px;
     }
+
+
+/* WORTH YOUR WHILE SECTION */
 
     .worthTomb{
         justify-content: space-evenly;
@@ -424,6 +489,9 @@
     .worthButton{
         width:25%;
     }
+
+
+/* CONTACT FORM SECTION */
 
     .contactForm{
         margin-left: -15vw;
@@ -457,11 +525,16 @@
         background-color:rgba(126, 209, 45, 0);
       }
 
+
+/* PLACEHOLDER SECTION */
+
     .placeholderText{
         width:65%;
         font-size: 20px;
     }
     
+
+/* FOOTER SECTION */
 
     .footerLeft{
         height:90%;
@@ -493,8 +566,6 @@
 
     .followUs{
         font-size: 16px;
-        /* margin-top: 35%; */
-        
     }
 
     .footerRight{
@@ -517,7 +588,6 @@
     .header{
         height:12.5vw;
         max-width:767px;
-        /* background-color: royalblue; */
     }
 
     .headerLogo{
@@ -667,14 +737,25 @@
 
 /* HOW IT WORKS SECTION */
 
+    .worksHeader{
+        margin-top: 5vw;
+    }
+
     .workIcons{
         width:90%;
         padding-top: 20px;
+        justify-content: space-between;
     }
 
     .iconImage{
-        width:175px;
+        min-width:150px;
         height:225px;
+    }
+
+    .iconText{
+        width:125%;
+        font-size: 22px;
+        align-self: center;
     }
 
     .worksText{
@@ -683,7 +764,7 @@
 
     .adminInclusions{
         width:80%;
-        margin-left: 10%;
+        align-self: center;
     }
 
     .inclusionIcon{
@@ -698,6 +779,8 @@
 
     .imagineContent{
         width:90%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
         justify-content: space-between;
     }
 
@@ -705,6 +788,9 @@
         font-size: 20px;
         max-width:60%;
     }
+
+
+/* WORTH SECTION */
 
     .worthTomb{
         justify-content: space-evenly;
@@ -743,7 +829,9 @@
     }
 
     .getStartedText{
-        font-size: 30px;
+        width:175%;
+        font-size: 40px;
+        align-self: center;
     }
 
     .contactPrompt{
@@ -834,7 +922,7 @@
         display:flex;
         width:150%;
         font-size: 16px;
-        margin-left: 5%;
+        margin-left: 15%;
     }
     
     .socialMediaIconsMobile{
@@ -843,6 +931,7 @@
         align-items: center;
         justify-content: space-evenly;
         margin-bottom: 10px;
+        margin-left: 10%;
     }
     
     .smIcon{

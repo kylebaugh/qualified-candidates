@@ -43,7 +43,8 @@ function smoothScroll(target, duration){
   let startPosition = window.pageYOffset;
   let distance = targetPosition - startPosition;
   let startTime = null;
-  
+  console.log('clicky')
+
   function animation(currentTime){
     if(startTime === null) startTime = currentTime;
     let timeElapsed = currentTime - startTime;
@@ -53,6 +54,8 @@ function smoothScroll(target, duration){
   }
 
   function ease(t, b, c, d){
+    console.log('clicky2')
+
     t /= d /2;
     if (t < 1) return c / 2 * t * t + b;
       t--;
