@@ -78,8 +78,8 @@ function App() {
         <img src={`${qualifiedCandidates}`} alt='qualifiedCandidatesLogo' className='headerLogo'/>
         </section>
         <section className='headerMenu'>
-          <p className='menuItem1' onClick={() => smoothScroll('.theProblem', 1000)}>The Problem</p>
-          <p className='menuItem2' onClick={() => smoothScroll('.howItWorks', 1000)}>How It Works</p>
+          <button className='menuItem1'>The Problem</button>
+          <button className='menuItem2'>How It Works</button>
           {/* <p className='menuItem3'>Free Download</p> */}
           <button className='menuButton' 
           onClick={() => calendlyLink('.contactForm', 1000)}
@@ -95,7 +95,7 @@ function App() {
           <p className='heroSection1'>We provide you with The Qualified Candidates for a wide range of positions.</p>
           <p className='heroSection2'>Ease your recruiting efforts today.</p>
         </div>
-        <button className='actionButton' onClick={() => smoothScroll('.contactForm', 1000)}>Learn More</button>
+        <button className='actionButton' onClick={() => calendlyLink('.contactForm', 1000)}>Learn More</button>
       </div>
 
 
@@ -134,7 +134,7 @@ function App() {
             costs you valuable hours each day.
           </p>
           <br></br>
-          <button className='problemButton' onClick={() => smoothScroll('.contactForm', 1000)}>Start Saving Time</button>
+          <button className='problemButton' onClick={() => calendlyLink('.contactForm', 1000)}>Start Saving Time</button>
         </div>
         
         <div className='problemRightSide'>
@@ -161,7 +161,7 @@ function App() {
               your organization.
             </p>
           </section>
-          <button className='problemButtonMobile' onClick={() => smoothScroll('.contactForm', 1000)}>Start Saving Time</button>
+          <button className='problemButtonMobile' onClick={() => calendlyLink('.contactForm', 1000)}>Start Saving Time</button>
 
         </div>
       </div>
@@ -256,7 +256,7 @@ function App() {
              </section>
             <br></br>
             <br></br>
-            <button className='inclusionsButton' onClick={() => smoothScroll('.contactForm', 1000)}>Request Information</button>
+            <button className='inclusionsButton' onClick={() => calendlyLink('.contactForm', 1000)}>Request Information</button>
         </div>
       </div>
 
@@ -303,7 +303,7 @@ function App() {
             </p>
           </section>  
         </div>
-          <button className='worthButton' onClick={() => smoothScroll('.contactRight', 1000)}>Get Started</button>
+          <button className='worthButton' onClick={() => calendlyLink('.contactRight', 1000)}>Get Started</button>
       </div>
 
 
