@@ -1,7 +1,6 @@
 import './App.css';
 import './responsive.css'
-import { useState } from 'react';
-// import SmoothScroll from 'smooth-scroll';
+import { useState, useEffect } from 'react';
 
 // Logos
 import qualifiedCandidates from './assets/logos/qualified-candidates-1.png'
@@ -38,7 +37,6 @@ import emailIcon from './assets/icons/036-email.png'
 
 
 // Smooth Scroll Functionality 
-
 const parent = document.querySelector(".headerMenu")
 
 parent.addEventListener("click", function(e){
@@ -58,24 +56,11 @@ parent.addEventListener("click", function(e){
   }
 })
 
-// function scrollToProblem(){
-//   document.querySelector('.theProblem').scrollIntoView({
-//     behavior: 'smooth'
-//   })
-// }
-
-// function scrollToWorks(){
-//   document.querySelector('.howItWorks').scrollIntoView({
-//     behavior: 'smooth'
-//   })
-// }
-
 function calendlyLink(){
   console.log('clicky')
 }
 
 
-// BEGIN APP
 
 function App() {
   const [name, setName] = useState('')
@@ -93,17 +78,11 @@ function App() {
         <img src={`${qualifiedCandidates}`} alt='qualifiedCandidatesLogo' className='headerLogo'/>
         </section>
         <section className='headerMenu'>
-          <button className='menuItem1' 
-          // onClick={() => smoothScroll('.theProblem', 1000)}
-          // onClick={() => scrollToProblem()}
-          >The Problem</button>
-          <button className='menuItem2' 
-          // onClick={() => scrollToWorks()}
-          >How It Works</button>
+          <p className='menuItem1' onClick={() => smoothScroll('.theProblem', 1000)}>The Problem</p>
+          <p className='menuItem2' onClick={() => smoothScroll('.howItWorks', 1000)}>How It Works</p>
           {/* <p className='menuItem3'>Free Download</p> */}
           <button className='menuButton' 
           onClick={() => calendlyLink('.contactForm', 1000)}
-          // onClick={() => clicker()} 
           >Contact Us</button>
         </section>
       </div>
@@ -116,7 +95,7 @@ function App() {
           <p className='heroSection1'>We provide you with The Qualified Candidates for a wide range of positions.</p>
           <p className='heroSection2'>Ease your recruiting efforts today.</p>
         </div>
-        <button className='actionButton' onClick={() => calendlyLink('.contactForm', 1000)}>Learn More</button>
+        <button className='actionButton' onClick={() => smoothScroll('.contactForm', 1000)}>Learn More</button>
       </div>
 
 
@@ -155,7 +134,7 @@ function App() {
             costs you valuable hours each day.
           </p>
           <br></br>
-          <button className='problemButton' onClick={() => calendlyLink('.contactForm', 1000)}>Start Saving Time</button>
+          <button className='problemButton' onClick={() => smoothScroll('.contactForm', 1000)}>Start Saving Time</button>
         </div>
         
         <div className='problemRightSide'>
@@ -182,7 +161,7 @@ function App() {
               your organization.
             </p>
           </section>
-          <button className='problemButtonMobile' onClick={() => calendlyLink('.contactForm', 1000)}>Start Saving Time</button>
+          <button className='problemButtonMobile' onClick={() => smoothScroll('.contactForm', 1000)}>Start Saving Time</button>
 
         </div>
       </div>
@@ -277,7 +256,7 @@ function App() {
              </section>
             <br></br>
             <br></br>
-            <button className='inclusionsButton' onClick={() => calendlyLink('.contactForm', 1000)}>Request Information</button>
+            <button className='inclusionsButton' onClick={() => smoothScroll('.contactForm', 1000)}>Request Information</button>
         </div>
       </div>
 
@@ -324,7 +303,7 @@ function App() {
             </p>
           </section>  
         </div>
-          <button className='worthButton' onClick={() => calendlyLink('.contactRight', 1000)}>Get Started</button>
+          <button className='worthButton' onClick={() => smoothScroll('.contactRight', 1000)}>Get Started</button>
       </div>
 
 
@@ -425,7 +404,10 @@ function App() {
 
       <div className='placeholderSection'>
         <p className='placeholderText'>
-        We offer staffing services for executives, remote workers, remote office professionals, temporary, temp to hire, contract to hire, long-term project-based employment and direct hire, permanent placement opportunities to all areas surrounding Texas, through out USA.
+          ~We need another type of placeholder statement to go here~
+          <br></br>
+          <br></br>
+          Labore aliqua voluptate commodo eu excepteur quis nulla dolor qui. 
         </p>
       </div>
 
