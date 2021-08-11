@@ -1,6 +1,7 @@
 import './App.css';
 import './responsive.css'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+// import SmoothScroll from 'smooth-scroll';
 
 // Logos
 import qualifiedCandidates from './assets/logos/qualified-candidates-1.png'
@@ -37,30 +38,48 @@ import emailIcon from './assets/icons/036-email.png'
 
 
 // Smooth Scroll Functionality 
-const parent = document.querySelector(".headerMenu")
 
-parent.addEventListener("click", function(e){
-  const child1 = e.target.matches(".menuItem1, .menuItem1 *")
-  const child2 = e.target.matches(".menuItem2, .menuItem2 *")
 
-  if (child1) {
-    document.querySelector('.theProblem').scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
+window.onload=function(){
+  const parent = document.getElementsByClassName(".headerMenu")
+  console.log(`${parent}`)
+  
+  parent.addEventListener("click", function(e){
+    const child1 = e.target.matches(".menuItem1, .menuItem1 *")
+    const child2 = e.target.matches(".menuItem2, .menuItem2 *")
+    
+    if (child1) {
+      document.querySelector('.theProblem').scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+    
+    if (child2){
+      document.querySelector('.howItWorks').scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+  })
+}
 
-  if (child2){
-    document.querySelector('.howItWorks').scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
-})
+// function scrollToProblem(){
+  //   document.querySelector('.theProblem').scrollIntoView({
+//     behavior: 'smooth'
+//   })
+// }
+
+// function scrollToWorks(){
+//   document.querySelector('.howItWorks').scrollIntoView({
+//     behavior: 'smooth'
+//   })
+// }
 
 function calendlyLink(){
   console.log('clicky')
 }
 
 
+// BEGIN APP
 
 function App() {
   const [name, setName] = useState('')
@@ -78,11 +97,17 @@ function App() {
         <img src={`${qualifiedCandidates}`} alt='qualifiedCandidatesLogo' className='headerLogo'/>
         </section>
         <section className='headerMenu'>
-          <button className='menuItem1'>The Problem</button>
-          <button className='menuItem2'>How It Works</button>
+          <button className='menuItem1' 
+          // onClick={() => smoothScroll('.theProblem', 1000)}
+          // onClick={() => scrollToProblem()}
+          >The Problem</button>
+          <button className='menuItem2' 
+          // onClick={() => scrollToWorks()}
+          >How It Works</button>
           {/* <p className='menuItem3'>Free Download</p> */}
           <button className='menuButton' 
           onClick={() => calendlyLink('.contactForm', 1000)}
+          // onClick={() => clicker()} 
           >Contact Us</button>
         </section>
       </div>
@@ -404,10 +429,7 @@ function App() {
 
       <div className='placeholderSection'>
         <p className='placeholderText'>
-          ~We need another type of placeholder statement to go here~
-          <br></br>
-          <br></br>
-          Labore aliqua voluptate commodo eu excepteur quis nulla dolor qui. 
+        We offer staffing services for executives, remote workers, remote office professionals, temporary, temp to hire, contract to hire, long-term project-based employment and direct hire, permanent placement opportunities to all areas surrounding Texas, through out USA.
         </p>
       </div>
 
