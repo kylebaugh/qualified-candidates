@@ -39,40 +39,41 @@ import emailIcon from './assets/icons/036-email.png'
 
 // Smooth Scroll Functionality 
 
+let parent = ''
 
 window.onload=function(){
-  const parent = document.getElementsByClassName(".headerMenu")
+  parent = document.getElementsByClassName(".headerMenu")
   console.log(`${parent}`)
+}
+
+// parent.addEventListener("click", function(e){
+//   const child1 = e.target.matches(".menuItem1, .menuItem1 *")
+//   const child2 = e.target.matches(".menuItem2, .menuItem2 *")
   
-  parent.addEventListener("click", function(e){
-    const child1 = e.target.matches(".menuItem1, .menuItem1 *")
-    const child2 = e.target.matches(".menuItem2, .menuItem2 *")
-    
-    if (child1) {
-      document.querySelector('.theProblem').scrollIntoView({
-        behavior: 'smooth'
-      })
-    }
-    
-    if (child2){
-      document.querySelector('.howItWorks').scrollIntoView({
-        behavior: 'smooth'
-      })
-    }
+//   if (child1) {
+//     document.querySelector('.theProblem').scrollIntoView({
+//       behavior: 'smooth'
+//     })
+//   }
+  
+//   if (child2){
+//     document.querySelector('.howItWorks').scrollIntoView({
+//       behavior: 'smooth'
+//     })
+//   }
+// })
+
+function scrollToProblem(){
+    document.querySelector('.theProblem').scrollIntoView({
+    behavior: 'smooth'
   })
 }
 
-// function scrollToProblem(){
-  //   document.querySelector('.theProblem').scrollIntoView({
-//     behavior: 'smooth'
-//   })
-// }
-
-// function scrollToWorks(){
-//   document.querySelector('.howItWorks').scrollIntoView({
-//     behavior: 'smooth'
-//   })
-// }
+function scrollToWorks(){
+  document.querySelector('.howItWorks').scrollIntoView({
+    behavior: 'smooth'
+  })
+}
 
 function calendlyLink(){
   console.log('clicky')
@@ -99,10 +100,10 @@ function App() {
         <section className='headerMenu'>
           <button className='menuItem1' 
           // onClick={() => smoothScroll('.theProblem', 1000)}
-          // onClick={() => scrollToProblem()}
+          onClick={() => scrollToProblem()}
           >The Problem</button>
           <button className='menuItem2' 
-          // onClick={() => scrollToWorks()}
+          onClick={() => scrollToWorks()}
           >How It Works</button>
           {/* <p className='menuItem3'>Free Download</p> */}
           <button className='menuButton' 
