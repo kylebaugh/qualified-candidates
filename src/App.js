@@ -37,32 +37,27 @@ import emailIcon from './assets/icons/036-email.png'
 
 
 // Smooth Scroll Functionality 
-function smoothScroll(target, duration){
-  var target = document.querySelector(target);
-  var targetPosition = target.getBoundingClientRect().top + window.scrollY;
-  let startPosition = window.pageYOffset;
-  let distance = targetPosition - startPosition;
-  let startTime = null;
+const parent = document.querySelector(".headerMenu")
+
+parent.addEventListener("click", function(e){
+  const child1 = e.target.matches(".menuItem1, .menuItem1 *")
+  const child2 = e.target.matches(".menuItem2, .menuItem2 *")
+
+  if (child1) {
+    document.querySelector('.theProblem').scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+
+  if (child2){
+    document.querySelector('.howItWorks').scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+})
+
+function calendlyLink(){
   console.log('clicky')
-
-  function animation(currentTime){
-    if(startTime === null) startTime = currentTime;
-    let timeElapsed = currentTime - startTime;
-    let run = ease(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if(timeElapsed < duration) requestAnimationFrame(animation)
-  }
-
-  function ease(t, b, c, d){
-    console.log('clicky2')
-
-    t /= d /2;
-    if (t < 1) return c / 2 * t * t + b;
-      t--;
-      return -c / 2 * (t * (t -2) -1) + b;
-  }
-
-  requestAnimationFrame(animation)
 }
 
 
@@ -87,8 +82,7 @@ function App() {
           <p className='menuItem2' onClick={() => smoothScroll('.howItWorks', 1000)}>How It Works</p>
           {/* <p className='menuItem3'>Free Download</p> */}
           <button className='menuButton' 
-          onClick={() => smoothScroll('.contactForm', 1000)}
-          // onClick={() => clicker()} 
+          onClick={() => calendlyLink('.contactForm', 1000)}
           >Contact Us</button>
         </section>
       </div>
