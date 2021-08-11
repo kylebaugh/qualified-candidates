@@ -43,8 +43,6 @@ html,body
   max-width: 25%;
   font-size: 25px;
   align-self:center;
-  border: none;
-  background-color: white;
 }
 
 .menuItem1:hover{
@@ -56,8 +54,6 @@ html,body
   max-width: 25%;
   font-size: 25px;
   align-self:center;
-  border: none;
-  background-color: white;
 }
 
 .menuItem2:hover{
@@ -518,12 +514,9 @@ html,body
 }
 
 .placeholderText{
-  width: 75%;
+  width: 50%;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
-
 }
 
 /* FOOTER SECTION */
