@@ -158,9 +158,9 @@
 
 /* PLACEHOLDER SECTION */
 
-      .placeholderSection{
-          margin-bottom: 6vh;
-      }
+    .placeholderSection{
+        margin-bottom: 2.5vw;
+    }
 
 
 /* FOOTER SECTION */
@@ -307,6 +307,10 @@
           margin-bottom: 0px;
       }
 
+      .placeholderText{
+        width: 70%;
+        align-self: center;
+      }
 /* FOOTER SECTION */
 
       .footerLeft{
