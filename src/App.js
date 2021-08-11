@@ -56,12 +56,6 @@ parent.addEventListener("click", function(e){
       behavior: 'smooth'
     })
   }
-
-  if(child3){
-    document.querySelector('.menuButton'){
-      console.log('clicky')
-    }
-  }
 })
 
 // function scrollToProblem(){
@@ -76,9 +70,9 @@ parent.addEventListener("click", function(e){
 //   })
 // }
 
-// function calendlyLink(){
-//   console.log('clicky')
-// }
+function calendlyLink(){
+  console.log('clicky')
+}
 
 
 // BEGIN APP
@@ -108,7 +102,7 @@ function App() {
           >How It Works</button>
           {/* <p className='menuItem3'>Free Download</p> */}
           <button className='menuButton' 
-          // onClick={() => calendlyLink('.contactForm', 1000)}
+          onClick={() => calendlyLink('.contactForm', 1000)}
           // onClick={() => clicker()} 
           >Contact Us</button>
         </section>
