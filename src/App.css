@@ -18,7 +18,6 @@ html,body
   max-width:100vw;
   height:130px;
   padding-left: 5vw;
-
 }
 
 .calendly{
@@ -28,10 +27,22 @@ html,body
   left: 50%;
   bottom:25%;
   transform:translate(-50%, 0);
-
-  
 }
 
+.closeCalendly{
+  height: fit-content;
+  width:fit-content;
+  position: fixed;
+  left:5px;
+  top:5px;
+  border:none;
+  background-color: white;
+}
+
+.closeCalendly:hover{
+  cursor: pointer;
+  background-color: gray;
+}
 
 /* .calendly-inline-widget{
   width:630px;
@@ -94,7 +105,7 @@ html,body
 }
 
 .menuButton{
-  width: 25%;
+  width: fit-content;
   height:40%;
   font-size: 22.5px;
   font-weight: bold;
@@ -148,7 +159,7 @@ html,body
 
 .actionButton{
   width:fit-content;
-  height:3.5vw;
+  height:50px;
   font-size: 22.5px;
   font-weight: bold;
   background-color: rgba(126, 209, 45);
@@ -235,10 +246,12 @@ html,body
 }
 
 .problemButton{
-  width:55%;
+  width:fit-content;
   height:45px;
   font-size: 22.5px;
   font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: rgba(126, 209, 45);
   color:white;
   border-radius: 8px;
@@ -361,9 +374,13 @@ html,body
 }
 
 .inclusionsButton{
-  width:30%;
+  width:fit-content;
   height:45px;
   font-size: 22.5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 25px;
+  margin-bottom: -25px;
   font-weight: bold;
   background-color: rgba(126, 209, 45);
   color:white;
@@ -438,10 +455,12 @@ html,body
 }
 
 .worthButton{
-  width:15vw;
+  width:fit-content;
   height:50px;
   font-size: 22.5px;
   font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-top: 5vw;
   margin-bottom: 5vw;
   background-color: rgba(126, 209, 45);
@@ -506,31 +525,30 @@ html,body
 }
 
 .contactFormSection{
+  width:600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width:450%;
+  align-items: center;
   background-color: none;
 }
 
 .contactRightTop{
   width:100%;
   display:flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-size: 40px;
   font-weight: bold;
   color:black;
   text-align: center;
   margin-bottom: 25px;
-  /* background-color: royalblue; */
 }
 
 .contactNameDiv{
-  min-width:45%;
+  min-width:290px;
   background-color: none;
-  /* background-color: salmon; */
 }
 
 .emailName{
@@ -550,7 +568,7 @@ html,body
 }
 
 .contactEmailDiv{
-  min-width:45%;
+  min-width:290px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -579,13 +597,13 @@ html,body
 
 .contactMessageDiv{
   display: flex;
-  width:92.50%;
+  width:600px;
   margin-bottom: 25px;
 
 }
 
 .emailMessage{
-  width:100%;
+  width:600px;
   height:200px;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
@@ -676,7 +694,6 @@ html,body
   font-size: 24px;
   font-weight: bold;
   margin-bottom: -2%;
-
 }
 
 .footerEmail{
@@ -693,6 +710,7 @@ html,body
 .footerCenter{
   display:flex;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
   width: 25%;
 }
@@ -711,7 +729,7 @@ html,body
   flex-direction: column;
   align-items: flex-end;
   width: 25%;
-  padding-top: 2.5vw;
+  /* padding-top: 2.5vw; */
 }
 
 .socialMediaIcons{
@@ -731,6 +749,10 @@ html,body
 }
 .smIcon{
   height:40px
+}
+
+.footerLogo{
+  margin-top: -25%;
 }
 
 

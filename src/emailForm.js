@@ -1,7 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import './App.css'
-// import './ContactUs.css';
 
 const {EMAIL_JS_API} = process.env
 

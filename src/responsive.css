@@ -22,6 +22,7 @@
     .menuButton{
         font-size: 20px;
         width: 30%;
+        height:fit-content
     }
 
     /* HERO SECTION */
@@ -37,7 +38,7 @@
     }
 
     .actionButton{
-        width:17.5%;
+        /* width:fit-content; */
         height:5vh;
         font-size: 20px;
       }
@@ -78,8 +79,8 @@
       }
 
       .problemButton{
-        width:65%;
-        height:7.5vh;
+        /* width:65%; */
+        /* height:7.5vh; */
         font-size: 22px;
         font-weight: bold;
         background-color: rgba(126, 209, 45);
@@ -106,10 +107,10 @@
       .adminInclusions{
           width:75%;
       }
-
+/* 
       .inclusionsButton{
           width:35%;
-      }
+      } */
 
 
 /* IMAGINE SECTION */
@@ -129,16 +130,16 @@
           padding-left: 2%;
           padding-right: 2%;
       }
-
+/* 
       .worthButton{
           width:15%;
-      }
+      } */
 
 
 /* CONTACT FORM SECTION */
 
       .contactForm{
-          width:1200px;
+          width:100%;
           height:325px;
           margin-bottom: 5vh;
       }
@@ -153,6 +154,22 @@
 
       .contactPrompt{
           font-size: 18px;
+      }
+
+      .contactFormSection{
+          width: 400px;
+      }
+
+      .contactNameDiv{
+          min-width:190px
+      }
+
+      .contactEmailDiv{
+          min-width:190px;
+      }
+
+      .contactMessageDiv{
+          width:400px;
       }
 
 
@@ -175,7 +192,7 @@
 
       .footerLogo{
           width:100%;
-          margin-top: 20%;
+          margin-top: 5%;
       }
 
 /* MOBILE SECTION */
@@ -234,13 +251,17 @@
         margin-bottom: 2.5vw;
     }
 
+    .stoneHeader{
+        font-size: 28px;
+    }
+
 
 /* PROBLEM SECTION */
 
     .theProblem{
         display:flex;
         justify-content: space-evenly;
-        height:100vh;
+        height:fit-content;
         text-align: left;
         margin-bottom: 5vw;
       }
@@ -262,7 +283,7 @@
 
       .problemButton{
         width:65%;
-        height:7.5vh;
+        height:fit-content;
         font-size: 22px;
         font-weight: bold;
         background-color: rgba(126, 209, 45);
@@ -296,15 +317,69 @@
 /* CONTACT FORM SECTION */
 
       .contactForm{
-          margin-left: -10vw;
           margin-bottom: 0px;
       }
 
+      /* .contactLeft{
+          background-color: royalblue;
+      } */
+
+      .getStartedText{
+          font-size: 30px;
+      }
+
+      .contactPrompt{
+          width:150%;
+          align-self: center;
+      }
+
+      .contactRight{
+          width:200px;
+          /* background-color: royalblue; */
+          margin-left: 7vw;
+          /* margin-left: -5vw; */
+          /* padding-right: 15vw; */
+      }
+
+      .contactFormSection{
+          width:200px;
+      }
+
+      .contactRightTop{
+          width:fit-content;
+          justify-content: space-evenly;
+          /* background-color: salmon; */
+      }
+
+      .contactNameDiv{
+          width:140px;
+      }
+
+      .emailName{
+          width:140px;
+      }
+
+      .contactEmailDiv{
+          width:140px;
+      }
+
+      .emailAddress{
+          width:140px;
+      }
+
+      .contactMessageDiv{
+          width:55%;
+      }
 
 /* PLACEHOLDER SECTION */
       .placeholderSection{
           height:fit-content;
           margin-bottom: 0px;
+      }
+
+      .placeholderText{
+          width:80%;
+          font-size: 20px;
       }
 
 /* FOOTER SECTION */
@@ -375,8 +450,8 @@
     }
 
     .actionButton{
-        width:17.5%;
-        height:5vh;
+        width:fit-content;
+        height:fit-content;
         font-size: 20px;
       }
 
@@ -396,7 +471,7 @@
     }
 
     .stoneText{
-        font-size: 18px;
+        font-size: 14px;
     }
 
 /* PROBLEM SECTION */
@@ -404,7 +479,7 @@
     .theProblem{
         display:flex;
         justify-content: space-evenly;
-        height:100vh;
+        height:fit-content;
         text-align: left;
         margin-bottom: 15vw;
       }
@@ -456,7 +531,7 @@
     }
 
     .adminInclusions{
-        width:70%;
+        width:80%;
     }
 
     .inclusionsButton{
@@ -487,19 +562,19 @@
     }
 
     .worthButton{
-        width:25%;
+        width:fit-content;
     }
 
 
 /* CONTACT FORM SECTION */
 
     .contactForm{
-        margin-left: -15vw;
+        /* margin-left: -15vw; */
     }
 
     .contactLeft{
-        width:20%;
-        margin-left: -15%;
+        width:25%;
+        /* margin-left: -10%; */
     }
 
     .contactEmailIcon{
@@ -515,29 +590,41 @@
     .contactPrompt{
         font-size: 18px;
     }
+
     .contactRight{
         width:20%;
-        margin-left: -20%;
+        margin-left: 0%;
     }
 
-    #mc_embed_signup{
-        width:100%;
-        background-color:rgba(126, 209, 45, 0);
-      }
+    .emailName{
+        font-size: 15px;
+    }
+
+    .emailAddress{
+        font-size: 15px;
+    }
+    
+    .emailMessage{
+        font-size: 15px;
+    }
 
 
 /* PLACEHOLDER SECTION */
 
     .placeholderText{
-        width:65%;
+        width:75%;
         font-size: 20px;
     }
     
 
 /* FOOTER SECTION */
 
+    .footer{
+        max-height:fit-content;
+    }
+
     .footerLeft{
-        height:90%;
+        height:60%;
         width:30%;
     }
 
@@ -576,7 +663,7 @@
     }
 
     .footerLogo{
-        margin-top: 20%;
+        margin-top: -20%;
     }
 
 }
@@ -588,6 +675,7 @@
     .header{
         height:12.5vw;
         max-width:767px;
+        padding-right: 15px;
     }
 
     .headerLogo{
@@ -595,23 +683,23 @@
     }
 
     .headerMenu{
-        width:60%;
+        width:70%;
     }
 
     .menuItem1{
         max-width: 30%;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .menuItem2{
         max-width: 30%;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .menuButton{
-        font-size: 16px;
-        width: 30%;
-        min-height: 9vw
+        font-size: 14px;
+        width: fit-content;
+        /* min-height: 9vw */
     }
 
 /* HERO SECTION */
@@ -639,7 +727,7 @@
     }
 
     .actionButton{
-        width:17.5%;
+        width:fit-content;
         height:5vh;
         font-size: 18px;
         text-align: center;
@@ -651,7 +739,7 @@
     .tombstones{
         display:flex;
         width:90%;
-        height:25vh;
+        height:fit-content;
         margin-bottom: 7.5vw;
         margin-left: 5%;
     }
@@ -773,6 +861,8 @@
 
     .inclusionsButton{
         width:55%;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
 /* IMAGINE SECTION */
@@ -805,53 +895,72 @@
     }
 
     .worthButton{
-        width:25%;
+        width:fit-content;
     }
 
 
 /* CONTACT FORM SECTION */
 
     .contactForm{
-        margin-left: -105vw;
+        width: 600px;
+        background-size: 210%;
+        background-position-x: left, 69%;
+        /* margin-left: -50vw; */
         flex-direction: column;
-        height: fit-content;
+        /* height: fit-content; */
+        /* background-color: white; */
     }
 
     .contactLeft{
         width:20%;
-        margin-left: 50%;
+        max-height: 30%;
+        /* margin-left: 35%; */
     }
 
+    
     .contactEmailIcon{
-        width:175px;
+        display: none;
+        max-width:100px;
         height:auto;
         align-self: center;
     }
 
     .getStartedText{
-        width:175%;
-        font-size: 40px;
+        font-size: 30px;
+        width:250%;     
         align-self: center;
     }
-
+    
     .contactPrompt{
-        font-size: 18px;
+        font-size: 14px;
+        width:250%;
     }
     .contactRight{
         width:30%;
-        margin-left: -20%;
-        margin-left: 50%;
+        /* margin-left: -20%;
+        margin-left: 50%; */
         margin-bottom: 3%;
-
+        padding-top: 10px;
     }
 
-    #mc_embed_signup{
-        width:100%;
-        background-color:rgba(126, 209, 45, 0);
-      }
+    .contactMessageDiv{
+        max-height: 100px;
+    }
+
+    .emailMessage{
+        height:75px;
+        margin-top: -25px;
+    }
+
+    .emailSubmit{
+        height:fit-content;
+        font-size: 20px;
+    }
+
+/* PLACEHOLDER SECTION */
 
     .placeholderText{
-        width:65%;
+        width:85%;
         font-size: 18px;
     }
     
@@ -878,7 +987,8 @@
     }
 
     .footerContact{
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: -10px;
         text-align: left;
     }
 
@@ -948,8 +1058,9 @@
 
     .footerLogoMobile{
         display:flex;
-        width:135%;
-        margin-left: -30%;
+        width:100%;
+        margin-top: 25px;
+        /* margin-left: -30%; */
     }
 
 }
