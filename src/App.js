@@ -91,7 +91,7 @@ function App() {
           <button className='menuButton' 
           onClick={() => calendlyLink('.contactForm', 1000)}
           // onClick={() => clicker()} 
-          >Contact Us</button>
+          >Schedule a Call</button>
         </section>
 
 
@@ -101,7 +101,7 @@ function App() {
 {/* Calendly Widget */}
     {showCalendly && <div className='calendly'>
       <InlineWidget className="widget1" url="https://calendly.com/find-qualified-canditates/experiment1et"/>
-
+      <button className='closeCalendly' onClick={() => calendlyLink('.contactForm', 1000)}>X</button>
     </div>}
 
 {/* Hero Section */}
@@ -111,7 +111,7 @@ function App() {
           <p className='heroSection1'>We provide you with The Qualified Candidates for a wide range of positions.</p>
           <p className='heroSection2'>Ease your recruiting efforts today.</p>
         </div>
-        <button className='actionButton' onClick={() => calendlyLink('.contactForm', 1000)}>Learn More</button>
+        <button className='actionButton' onClick={() => calendlyLink('.contactForm', 1000)}>Schedule a Call</button>
       </div>
 
 
@@ -150,7 +150,7 @@ function App() {
             costs you valuable hours each day.
           </p>
           <br></br>
-          <button className='problemButton' onClick={() => calendlyLink('.contactForm', 1000)}>Start Saving Time</button>
+          <button className='problemButton' onClick={() => calendlyLink('.contactForm', 1000)}>Schedule a Call</button>
         </div>
         
         <div className='problemRightSide'>
@@ -171,13 +171,13 @@ function App() {
           </section>
 
           <section>
-            <p className='problemHeader'>A Hiring Manager should focus on Hiring</p>
+            <p className='problemHeader'>A Hiring Manager should focus on Hiring.</p>
             <p className='problemText'>Our staff handles the busy work, letting you focus 
               on what you're best at: Hiring the right people for 
               your organization.
             </p>
           </section>
-          <button className='problemButtonMobile' onClick={() => calendlyLink('.contactForm', 1000)}>Start Saving Time</button>
+          <button className='problemButtonMobile' onClick={() => calendlyLink('.contactForm', 1000)}>Schedule a Call</button>
 
         </div>
       </div>
@@ -217,7 +217,10 @@ function App() {
           We offer staffing services for executives, remote workers, remote office professionals, temporary, temp to hire, contract to hire, long-term project-based employment and direct hire, permanent placement opportunities to all areas surrounding Texas, through out USA. 
         <br></br>
         <br></br>
-          Our rigorous screening process delivers quality candidates perfectly suited to meet your needs.  Additionally, our Administrative Backoffice includes:
+          Our rigorous screening process delivers quality candidates perfectly suited to meet your needs.  
+          <br></br>
+          <br></br>
+          Additionally, our Administrative Backoffice includes:
         </p>
         <br></br>
         <br></br>
@@ -272,7 +275,7 @@ function App() {
              </section>
             <br></br>
             <br></br>
-            <button className='inclusionsButton' onClick={() => calendlyLink('.contactForm', 1000)}>Request Information</button>
+            <button className='inclusionsButton' onClick={() => calendlyLink('.contactForm', 1000)}>Schedule a Call</button>
         </div>
       </div>
 
@@ -319,7 +322,7 @@ function App() {
             </p>
           </section>  
         </div>
-          <button className='worthButton' onClick={() => calendlyLink('.contactRight', 1000)}>Get Started</button>
+          <button className='worthButton' onClick={() => calendlyLink('.contactRight', 1000)}>Schedule a Call</button>
       </div>
 
 
@@ -359,7 +362,7 @@ function App() {
 
       <div className='placeholderSection'>
         <p className='placeholderText'>
-        We offer staffing services for executives, remote workers, remote office professionals, temporary, temp to hire, contract to hire, long-term project-based employment and direct hire, permanent placement opportunities to all areas surrounding Texas, through out USA.
+        We offer staffing services for executives, remote workers, remote office professionals, temporary, temp to hire, contract to hire, long-term project-based employment and direct hire, permanent placement opportunities to all areas surrounding Texas, and throughout the USA.
         </p>
       </div>
 
@@ -368,23 +371,15 @@ function App() {
       <div className='footer'>
         <div className='footerLeft'>
           <section>
-            <p className='footerMission'>Our Mission</p>
-            <p className='footerMissionText'>
-              ~Mission Statement~
-            </p>
-            <p className='footerContact'>Contact</p>
-            <p className='footerEmail'>h4@thequalcandidates.com</p>
+            <p className='footerContact'>Contact Us</p>
+            <p className='footerEmail'>hello@findtqc.com</p>
           </section>
         </div>
 
         <div className='footerLeftMobile'>
           <section>
-            <p className='footerMission'>Our Mission</p>
-            <p className='footerMissionText'>
-              ~Mission Statement~
-            </p>
-            <p className='footerContact'>Contact</p>
-            <p className='footerEmail'>h4@thequalcandidates.com</p>
+            <p className='footerContact'>Contact Us</p>
+            <p className='footerEmail'>hello@findtqc.com</p>
           </section>
         </div>
 
@@ -404,12 +399,17 @@ function App() {
             Contact
           </p> */}
 
-          <p className='followUs'>Follow us on Social Media</p>
+          <p className='footerMission'>Our Mission</p>
+            <p className='footerMissionText'>
+              We serve businesses in multiple industries with a variety of talent needs.
+            </p>
+
+          {/* <p className='followUs'>Follow us on Social Media</p>
           <section className='socialMediaIcons'>
             <img className='smIcon' src={`${instagram}`} alt='instagramLogo.jpg'/>
             <img className='smIcon' src={`${twitter}`} alt='twitterLogo.jpg'/>
             <img className='smIcon' src={`${facebook}`} alt='facebookLogo.jpg'/>
-          </section>
+          </section> */}
         </div>
 
         <div className='footerRight'>
@@ -420,13 +420,14 @@ function App() {
               <img src={`${facebook}`} alt='facebookLogo.jpg'/>
             </section>
             <br></br> */}
-              <p className='followUsMobile'>Follow us on Social Media</p>
+
+              {/* <p className='followUsMobile'>Follow us on Social Media</p>
 
               <section className='socialMediaIconsMobile'>
                 <img className='smIconMobile' src={`${instagram}`} alt='instagramLogo.jpg'/>
                 <img className='smIconMobile' src={`${twitter}`} alt='twitterLogo.jpg'/>
                 <img className='smIconMobile' src={`${facebook}`} alt='facebookLogo.jpg'/>
-              </section>
+              </section> */}
 
             <section>
               <br></br>
@@ -447,13 +448,13 @@ function App() {
               <img src={`${facebook}`} alt='facebookLogo.jpg'/>
             </section>
             <br></br> */}
-              <p className='followUsMobile'>Follow us on Social Media</p>
+              {/* <p className='followUsMobile'>Follow us on Social Media</p>
 
               <section className='socialMediaIconsMobile'>
                 <img className='smIconMobile' src={`${instagram}`} alt='instagramLogo.jpg'/>
                 <img className='smIconMobile' src={`${twitter}`} alt='twitterLogo.jpg'/>
                 <img className='smIconMobile' src={`${facebook}`} alt='facebookLogo.jpg'/>
-              </section>
+              </section> */}
 
             <section>
 
