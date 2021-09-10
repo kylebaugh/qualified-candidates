@@ -1097,15 +1097,15 @@
     }
 
     .heroSection1{
-        max-width:30%;
+        max-width:40%;
     }
 
     .heroSection2{
-        max-width: 30%;
+        max-width: 40%;
     }
 
     .actionButton{
-        margin-left: 55px;
+        margin-left: 40px;
     }
 
     /* Tombstone Section */
@@ -1206,16 +1206,16 @@
 
     .getStartedText{
         width:200%;
-        margin-left: -185%;
+        margin-left: -125%;
     }
 
     .contactPrompt{
-        margin-left: -185%;
+        margin-left: -125%;
     }
 
     .contactRight{
         /* margin-right: -185%; */
-        margin-right: 37.5%;
+        margin-right: 30%;
     }
 
     
