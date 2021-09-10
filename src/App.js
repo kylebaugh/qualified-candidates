@@ -39,6 +39,9 @@ import { InlineWidget } from 'react-calendly';
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 
+// Global site tag (gtag.js) - Google Analytics
+
+
 // Smooth Scroll Functionality 
 
 let parent = ''
@@ -63,6 +66,7 @@ function scrollToWorks(){
 // BEGIN APP
 
 function App() {
+
   const [showCalendly, setShowCalendly] = useState(false)
   
   function calendlyLink(){
@@ -283,7 +287,7 @@ function App() {
 
       <div className='imagine'>
         <section className='imagineContent'>
-          <img src={`${computer}`} alt='computerScreen'/>
+          <img className='computerScreen' src={`${computer}`} alt='computerScreen'/>
           <p className='imagineText'>Imagine spending your time talking to pre-screened, qualified candidates that are perfect for the positions you need filled.</p>
         </section>
       </div>

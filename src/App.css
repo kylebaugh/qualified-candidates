@@ -44,10 +44,6 @@ html,body
   background-color: gray;
 }
 
-/* .calendly-inline-widget{
-  width:630px;
-  height:630px;
-} */
 
 .headerLogo{
   display:flex;
@@ -305,6 +301,7 @@ html,body
   justify-content: space-between;
   align-self: center;
   min-width:75%;
+
 
 }
 

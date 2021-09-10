@@ -568,10 +568,6 @@
 
 /* CONTACT FORM SECTION */
 
-    .contactForm{
-        /* margin-left: -15vw; */
-    }
-
     .contactLeft{
         width:25%;
         /* margin-left: -10%; */
@@ -1062,5 +1058,182 @@
         margin-top: 25px;
         /* margin-left: -30%; */
     }
+
+}
+
+@media (max-width: 360px){
+    /* Calendly */
+
+    .calendly{
+        position:fixed;
+        top:10%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: gray;
+    }
+
+    /* Header Section */
+
+    .headerLogo{
+        max-width: 90%;
+    }
+
+    .menuItem1{
+        font-size: 10px;
+    }
+
+    .menuItem2{
+        font-size: 10px;
+    }
+    
+    .menuButton{
+        font-size: 10px;
+    }
+
+    /* Hero Section */
+
+    .heroDiv{
+        background-position-x: left, 20%;
+    }
+
+    .heroSection1{
+        max-width:30%;
+    }
+
+    .heroSection2{
+        max-width: 30%;
+    }
+
+    .actionButton{
+        margin-left: 55px;
+    }
+
+    /* Tombstone Section */
+
+    .stone{
+        justify-content: space-between;
+    }
+
+    .stoneHeader{
+        font-size: 14px;
+    }
+
+    .stoneText{
+        font-size: 12px;
+    }
+
+    /* Problem Section */
+
+    .problemButtonMobile{
+        width:fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* height:fit-content; */
+    }
+
+    /* How It Works Section */
+
+    .worksHeader{
+        font-size: 50px;
+        padding-top: 25px;
+    }
+
+    .worksIcons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workIcon{
+        width:55%
+    }
+
+    .inclusionIcon{
+        max-width: 55px;
+    }
+
+    .inclusionText{
+        font-size: 13px;
+    }
+
+    .inclusionsButton{
+        height:unset;
+        width:fit-content;
+        font-size: 20px;
+    }
+
+    /* Imagine Section */
+
+    .imagineContent{
+        gap:25px;
+    }
+
+    .computerScreen{
+        width: 140px
+    }
+
+    .imagineText{
+        font-size: 15px;
+    }
+
+    /* Worth Section */
+
+
+    .worthHeader{
+        font-size: 40px;
+    }
+
+    .worthTomb{
+        justify-content: space-between;
+    }
+    .worthIcon{
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .worthText{
+        font-size: 12px;
+    }
+
+    .worthButton{
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    /* Contact Form */
+
+    .getStartedText{
+        width:200%;
+        margin-left: -185%;
+    }
+
+    .contactPrompt{
+        margin-left: -185%;
+    }
+
+    .contactRight{
+        /* margin-right: -185%; */
+        margin-right: 37.5%;
+    }
+
+    
+    /* Footer */
+    
+    .footerContact{
+        font-size: 14px;
+    }
+    
+    .footerEmail{
+        font-size: 12px;
+    }
+
+    .footerLogoMobile{
+        width:125%;
+        margin-left: -25%;
+        margin-top: 10%;
+    }
+
 
 }
