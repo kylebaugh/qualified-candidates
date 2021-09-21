@@ -1,16 +1,15 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import emailjs from 'emailjs-com';
 import './App.css'
 
-const {EMAIL_JS_API} = process.env
-
 function ContactUs() {
+    const form = useRef()
 
     function sendEmail(e) {
         e.preventDefault();
-    
-        emailjs.sendForm('gmail', 'findtqc-submission', e.target, {EMAIL_JS_API})
-          .then((result) => {
+
+        emailjs.sendForm('tqcmail', 'findtqc-submission', form.current, 'user_buNhA1MOmy6z9cv43gZyt')
+        .then((result) => {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
@@ -20,7 +19,7 @@ function ContactUs() {
 
     return (
         <div className='contactRight'>
-            <form className='contactFormSection' onSubmit={sendEmail}>
+            <form ref={form} className='contactFormSection' onSubmit={sendEmail}>
                 
                 <div className='contactRightTop'>
                     <div className='contactNameDiv'>
