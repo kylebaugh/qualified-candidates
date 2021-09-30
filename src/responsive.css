@@ -186,6 +186,10 @@
           font-size: 20px;
       }
 
+      .footerContact{
+          margin-bottom: -27.5px;
+      }
+
       .smIcon{
           height:30px;
       }
@@ -388,6 +392,10 @@
           width:30%
       }
     
+      .footerContact{
+          margin-bottom: -27.5px;
+      }
+
       .footerCenter{
           width:30%
       }
@@ -634,11 +642,15 @@
 
     .footerContact{
         font-size: 20px;
+        margin-bottom: -20px;
     }
+
     .footerEmail{
         font-size: 16px;
+        margin-bottom: -30px;
     }
-  
+
+
     .footerCenter{
         height:90%;
         display:flex;
@@ -965,12 +977,39 @@
         display:none;
     }
 
+    .footerContactMobile{
+        font-size: 20px;
+        margin-bottom: -10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
     .footerLeftMobile{
         display:flex;
         width:40%;
         height:90%;
         width:27.5%;
     }
+
+    .footerPhoneMobile{
+        display:flex;
+        font-size: 14px;
+        margin-bottom: -27.5px;
+      }
+      
+      .footerEmailMobile{
+        display:flex;
+        font-size: 14px;
+        margin-bottom: -27.5px;
+        color: blue;
+      }
+      
+      .footerAddressMobile{
+        display:flex;
+        font-size: 14px;
+        text-align: left;
+        width: 125%;
+      }
 
     .footerMission{
         font-size: 18px;
@@ -1222,8 +1261,30 @@
     /* Footer */
     
     .footerContact{
-        font-size: 14px;
+        font-size: 16px;
+        margin-bottom: -5px;
     }
+
+    .footerPhoneMobile{
+        display:flex;
+        font-size: 12px;
+        margin-bottom: -25px;
+      }
+      
+      .footerEmailMobile{
+        display:flex;
+        font-size: 12px;
+        margin-bottom: -25px;
+        color: blue;
+      }
+      
+      .footerAddressMobile{
+        display:flex;
+        font-size: 12px;
+        text-align: left;
+        width: 125%;
+      }
+      
     
     .footerEmail{
         font-size: 12px;

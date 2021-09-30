@@ -678,23 +678,27 @@ html,body
 }
 
 .footerMission{
-  font-size:24px;
+  font-size:26px;
   font-weight: bold;
   margin-bottom: -2%;
 }
 
 .footerMissionText{
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .footerContact{
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: -2%;
+  margin-bottom: -25px;
+}
+
+.footerPhone{
+  margin-bottom: -30px;
 }
 
 .footerEmail{
-  font-size: 18px;
+  margin-bottom: -25px;
   color: blue;
 }
 
@@ -760,6 +764,18 @@ html,body
 }
 
 .footerLeftMobile{
+  display:none;
+}
+
+.footerPhoneMobile{
+  display:none;
+}
+
+.footerEmailMobile{
+  display:none;
+}
+
+.footerAddressMobile{
   display:none;
 }
 

@@ -375,15 +375,29 @@ function App() {
       <div className='footer'>
         <div className='footerLeft'>
           <section>
-            <p className='footerContact'>Contact Us</p>
-            <p className='footerEmail'>hello@findtqc.com</p>
+          <p className='footerContact'>Contact Us</p><br></br>
+            <p className='footerPhone'>(214)785-0289</p><br></br>
+            <p className='footerEmail'>hello@findtqc.com</p><br></br>
+            <p className='footerAddress'>
+              5050 Quorum Drive<br></br>
+              Suite 700<br></br>
+              Dallas, TX
+            </p>
+
+            {/* <p className='footerEmail'>hello@findtqc.com</p> */}
           </section>
         </div>
 
         <div className='footerLeftMobile'>
           <section>
-            <p className='footerContact'>Contact Us</p>
-            <p className='footerEmail'>hello@findtqc.com</p>
+            <p className='footerContactMobile'>Contact Us</p>
+            <p className='footerPhoneMobile'>(214)785-0289</p><br></br>
+            <p className='footerEmailMobile'>hello@findtqc.com</p><br></br>
+            <p className='footerAddressMobile'>
+              5050 Quorum Drive<br></br>
+              Suite 700<br></br>
+              Dallas, TX
+            </p>
           </section>
         </div>
 
