@@ -4,7 +4,7 @@ import { useState } from 'react';
 import ContactUs from './emailForm'
 
 // Logos
-import qualifiedCandidates from './assets/logos/qualified-candidates-1.png'
+import qualifiedCandidates from './assets/logos/the-qualified-candidates.png'
 import facebook from './assets/logos/facebook.png'
 import twitter from './assets/logos/twitter.png'
 import instagram from './assets/logos/instagram.png'
@@ -87,7 +87,7 @@ function App() {
           <button className='menuItem1' 
           // onClick={() => smoothScroll('.theProblem', 1000)}
           onClick={() => scrollToProblem()}
-          >The Problem</button>
+          >Why TQC</button>
           <button className='menuItem2' 
           onClick={() => scrollToWorks()}
           >How It Works</button>
@@ -438,7 +438,7 @@ function App() {
               <br></br>
               <br></br>
               <br></br>
-              <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg' className='footerLogo'/>
+              <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg' className='footerLogo' />
               <img src={`${qualifiedCandidates}`} alt='qualifiedCanditatesLogo.jpg' className='footerLogoMobile'/>
             </section>
           </div>
